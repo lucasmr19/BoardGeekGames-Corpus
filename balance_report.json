@@ -1,0 +1,152 @@
+{
+    "counts_before": {
+        "positive": 4309,
+        "negative": 192,
+        "neutral": 900
+    },
+    "counts_after": {
+        "neutral": 2174,
+        "positive": 2174,
+        "negative": 2174
+    },
+    "total_before": 5401,
+    "total_after": 6522,
+    "total_augmented": 3291,
+    "total_subsampled": 2170,
+    "balance_ratio_max_min": 1.0,
+    "balance_strategy": "hybrid",
+    "game_stats": {
+        "1": {
+            "counts_before": {
+                "positive": 1208,
+                "negative": 85,
+                "neutral": 256
+            },
+            "counts_after": {
+                "positive": 604,
+                "neutral": 604,
+                "negative": 604
+            },
+            "total_before": 1549,
+            "total_after": 1812,
+            "augmented_count": 867,
+            "subsampled_count": 604,
+            "balance_stats": {
+                "before": {
+                    "positive": 1208,
+                    "neutral": 256,
+                    "negative": 85
+                },
+                "after": {
+                    "positive": 604,
+                    "neutral": 604,
+                    "negative": 604
+                },
+                "strategy": "hybrid",
+                "balanced": true,
+                "augmented_count": 867,
+                "subsampled_count": 604,
+                "augmentation_used": true
+            }
+        },
+        "2": {
+            "counts_before": {
+                "neutral": 86,
+                "positive": 103,
+                "negative": 16
+            },
+            "counts_after": {
+                "positive": 61,
+                "neutral": 61,
+                "negative": 61
+            },
+            "total_before": 205,
+            "total_after": 183,
+            "augmented_count": 45,
+            "subsampled_count": 67,
+            "balance_stats": {
+                "before": {
+                    "positive": 103,
+                    "neutral": 86,
+                    "negative": 16
+                },
+                "after": {
+                    "positive": 61,
+                    "neutral": 61,
+                    "negative": 61
+                },
+                "strategy": "hybrid",
+                "balanced": true,
+                "augmented_count": 45,
+                "subsampled_count": 67,
+                "augmentation_used": true
+            }
+        },
+        "3": {
+            "counts_before": {
+                "positive": 2955,
+                "neutral": 516,
+                "negative": 81
+            },
+            "counts_after": {
+                "positive": 1477,
+                "neutral": 1477,
+                "negative": 1477
+            },
+            "total_before": 3552,
+            "total_after": 4431,
+            "augmented_count": 2357,
+            "subsampled_count": 1478,
+            "balance_stats": {
+                "before": {
+                    "positive": 2955,
+                    "neutral": 516,
+                    "negative": 81
+                },
+                "after": {
+                    "positive": 1477,
+                    "neutral": 1477,
+                    "negative": 1477
+                },
+                "strategy": "hybrid",
+                "balanced": true,
+                "augmented_count": 2357,
+                "subsampled_count": 1478,
+                "augmentation_used": true
+            }
+        },
+        "4": {
+            "counts_before": {
+                "positive": 43,
+                "neutral": 42,
+                "negative": 10
+            },
+            "counts_after": {
+                "positive": 32,
+                "neutral": 32,
+                "negative": 32
+            },
+            "total_before": 95,
+            "total_after": 96,
+            "augmented_count": 22,
+            "subsampled_count": 21,
+            "balance_stats": {
+                "before": {
+                    "positive": 43,
+                    "neutral": 42,
+                    "negative": 10
+                },
+                "after": {
+                    "positive": 32,
+                    "neutral": 32,
+                    "negative": 32
+                },
+                "strategy": "hybrid",
+                "balanced": true,
+                "augmented_count": 22,
+                "subsampled_count": 21,
+                "augmentation_used": true
+            }
+        }
+    }
+}
