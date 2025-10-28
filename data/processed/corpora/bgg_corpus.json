@@ -102,6 +102,475 @@
     },
     "reviews": [
       {
+        "username": "Simon Mueller",
+        "rating": 1.0,
+        "timestamp": 1197241200,
+        "game_id": 3,
+        "category": "negative",
+        "raw_text": "Very similar to Tic-Tac-Toe, you're trying to \"outthink\" your opponent(s), which results in an utterly boring tile-laying practice.",
+        "clean_text": "very similar to tic-tac-toe, you're trying to \"outthink\" your opponent(s), which results in an utterly boring tile-laying practice.",
+        "language": "en",
+        "processed": {
+          "sentences": [
+            "very similar to tic-tac-toe, you're trying to \"outthink\" your opponent(s), which results in an utterly boring tile-laying practice."
+          ],
+          "tokens": [
+            "very",
+            "similar",
+            "to",
+            "tic",
+            "-",
+            "tac",
+            "-",
+            "toe",
+            ",",
+            "you",
+            "'re",
+            "trying",
+            "to",
+            "\"",
+            "outthink",
+            "\"",
+            "your",
+            "opponent(s",
+            ")",
+            ",",
+            "which",
+            "results",
+            "in",
+            "an",
+            "utterly",
+            "boring",
+            "tile",
+            "-",
+            "laying",
+            "practice",
+            "."
+          ],
+          "tokens_no_stopwords": [
+            "similar",
+            "tic",
+            "tac",
+            "toe",
+            "'re",
+            "trying",
+            "outthink",
+            "opponent(s",
+            "results",
+            "utterly",
+            "boring",
+            "tile",
+            "laying",
+            "practice"
+          ],
+          "stems": [
+            "similar",
+            "tic",
+            "tac",
+            "toe",
+            "'re",
+            "tri",
+            "outthink",
+            "opponent(",
+            "result",
+            "utterli",
+            "bore",
+            "tile",
+            "lay",
+            "practic"
+          ],
+          "lemmas": [
+            "very",
+            "similar",
+            "to",
+            "tic",
+            "-",
+            "tac",
+            "-",
+            "toe",
+            ",",
+            "you",
+            "be",
+            "try",
+            "to",
+            "\"",
+            "outthink",
+            "\"",
+            "your",
+            "opponent(s",
+            ")",
+            ",",
+            "which",
+            "result",
+            "in",
+            "an",
+            "utterly",
+            "boring",
+            "tile",
+            "-",
+            "laying",
+            "practice",
+            "."
+          ],
+          "pos_tags": [
+            [
+              "very",
+              "ADV",
+              "RB"
+            ],
+            [
+              "similar",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "to",
+              "ADP",
+              "IN"
+            ],
+            [
+              "tic",
+              "PROPN",
+              "NNP"
+            ],
+            [
+              "-",
+              "PUNCT",
+              "HYPH"
+            ],
+            [
+              "tac",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "-",
+              "PUNCT",
+              "HYPH"
+            ],
+            [
+              "toe",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "you",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "'re",
+              "AUX",
+              "VBP"
+            ],
+            [
+              "trying",
+              "VERB",
+              "VBG"
+            ],
+            [
+              "to",
+              "PART",
+              "TO"
+            ],
+            [
+              "\"",
+              "PUNCT",
+              "``"
+            ],
+            [
+              "outthink",
+              "VERB",
+              "VB"
+            ],
+            [
+              "\"",
+              "PUNCT",
+              "''"
+            ],
+            [
+              "your",
+              "PRON",
+              "PRP$"
+            ],
+            [
+              "opponent(s",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ")",
+              "PUNCT",
+              "-RRB-"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "which",
+              "PRON",
+              "WDT"
+            ],
+            [
+              "results",
+              "VERB",
+              "VBZ"
+            ],
+            [
+              "in",
+              "ADP",
+              "IN"
+            ],
+            [
+              "an",
+              "DET",
+              "DT"
+            ],
+            [
+              "utterly",
+              "ADV",
+              "RB"
+            ],
+            [
+              "boring",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "tile",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "-",
+              "PUNCT",
+              "HYPH"
+            ],
+            [
+              "laying",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "practice",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ]
+          ],
+          "dependencies": [
+            [
+              "very",
+              "advmod",
+              "similar"
+            ],
+            [
+              "similar",
+              "advmod",
+              "trying"
+            ],
+            [
+              "to",
+              "prep",
+              "similar"
+            ],
+            [
+              "tic",
+              "compound",
+              "toe"
+            ],
+            [
+              "-",
+              "punct",
+              "toe"
+            ],
+            [
+              "tac",
+              "compound",
+              "toe"
+            ],
+            [
+              "-",
+              "punct",
+              "toe"
+            ],
+            [
+              "toe",
+              "pobj",
+              "to"
+            ],
+            [
+              ",",
+              "punct",
+              "trying"
+            ],
+            [
+              "you",
+              "nsubj",
+              "trying"
+            ],
+            [
+              "'re",
+              "aux",
+              "trying"
+            ],
+            [
+              "trying",
+              "ROOT",
+              "trying"
+            ],
+            [
+              "to",
+              "aux",
+              "outthink"
+            ],
+            [
+              "\"",
+              "punct",
+              "outthink"
+            ],
+            [
+              "outthink",
+              "xcomp",
+              "trying"
+            ],
+            [
+              "\"",
+              "punct",
+              "outthink"
+            ],
+            [
+              "your",
+              "poss",
+              "opponent(s"
+            ],
+            [
+              "opponent(s",
+              "dobj",
+              "outthink"
+            ],
+            [
+              ")",
+              "punct",
+              "outthink"
+            ],
+            [
+              ",",
+              "punct",
+              "trying"
+            ],
+            [
+              "which",
+              "nsubj",
+              "results"
+            ],
+            [
+              "results",
+              "advcl",
+              "trying"
+            ],
+            [
+              "in",
+              "prep",
+              "results"
+            ],
+            [
+              "an",
+              "det",
+              "practice"
+            ],
+            [
+              "utterly",
+              "advmod",
+              "boring"
+            ],
+            [
+              "boring",
+              "amod",
+              "practice"
+            ],
+            [
+              "tile",
+              "compound",
+              "laying"
+            ],
+            [
+              "-",
+              "punct",
+              "laying"
+            ],
+            [
+              "laying",
+              "compound",
+              "practice"
+            ],
+            [
+              "practice",
+              "pobj",
+              "in"
+            ],
+            [
+              ".",
+              "punct",
+              "trying"
+            ]
+          ],
+          "entities": []
+        },
+        "linguistic_features": {
+          "sentiment.pos_count": 0,
+          "sentiment.neg_count": 2,
+          "sentiment.total": 2,
+          "sentiment.pos_ratio": 0.0,
+          "vader.compound": -0.3804,
+          "vader.pos": 0.0,
+          "vader.neu": 0.868,
+          "vader.neg": 0.132,
+          "syntactic.num_tokens_no_stop": 14,
+          "syntactic.avg_token_no_stop_length": 5.785714285714286,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 1,
+          "sentence.avg_sentiment": -0.3804,
+          "sentence.sentiment_variance": 0,
+          "hedge.count": 0,
+          "hedge.count_type.hedge_words": 0,
+          "hedge.count_type.propositional": 0,
+          "hedge.count_type.relational": 0,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.0,
+          "hedge.nearby_sentiment_count": 0,
+          "hedge.nearby_sentiment_ratio": 0.0,
+          "hedge.prop_propositional": 0.0,
+          "hedge.prop_relational": 0.0,
+          "hedge.prop_discourse": 0.0,
+          "domain.misc=boring": 1,
+          "lexicon.intensifier=utterly": 1,
+          "lexicon.neg_word=utterly": 1,
+          "lexicon.neg_word=boring": 1
+        },
+        "patterns": {
+          "emails": [],
+          "dates": [],
+          "phones": [],
+          "hashtags": [],
+          "mentions": [],
+          "urls": [],
+          "emojis": []
+        }
+      },
+      {
         "username": "CotB",
         "rating": 6.0,
         "timestamp": 1757109600,
@@ -336,73 +805,33 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 0,
-            "negative_count": 0,
-            "total_count": 0,
-            "ratio": 0.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 0,
-            "total_modifiers": 0,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.9274,
-            "pos": 0.558,
-            "neu": 0.442,
-            "neg": 0.0
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 13,
-            "avg_token_no_stop_length": 4.3076923076923075,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 1,
-            "avg_sentiment": 0.9274,
-            "sentiment_variance": 0,
-            "sentence_sentiments": [
-              0.9274
-            ]
-          }
+          "sentiment.pos_count": 3,
+          "sentiment.neg_count": 0,
+          "sentiment.total": 3,
+          "sentiment.pos_ratio": 1.0,
+          "vader.compound": 0.9274,
+          "vader.pos": 0.558,
+          "vader.neu": 0.442,
+          "vader.neg": 0.0,
+          "syntactic.num_tokens_no_stop": 13,
+          "syntactic.avg_token_no_stop_length": 4.3076923076923075,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 1,
+          "sentence.avg_sentiment": 0.9274,
+          "sentence.sentiment_variance": 0,
+          "hedge.count": 0,
+          "hedge.count_type.hedge_words": 0,
+          "hedge.count_type.propositional": 0,
+          "hedge.count_type.relational": 0,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.0,
+          "hedge.nearby_sentiment_count": 0,
+          "hedge.nearby_sentiment_ratio": 0.0,
+          "hedge.prop_propositional": 0.0,
+          "hedge.prop_relational": 0.0,
+          "hedge.prop_discourse": 0.0,
+          "lexicon.pos_word=best": 3
         },
         "patterns": {
           "emails": [],
@@ -565,73 +994,33 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 0,
-            "negative_count": 0,
-            "total_count": 0,
-            "ratio": 0.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 0,
-            "total_modifiers": 0,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.2023,
-            "pos": 0.265,
-            "neu": 0.735,
-            "neg": 0.0
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 7,
-            "avg_token_no_stop_length": 4.857142857142857,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 1,
-            "avg_sentiment": 0.2023,
-            "sentiment_variance": 0,
-            "sentence_sentiments": [
-              0.2023
-            ]
-          }
+          "sentiment.pos_count": 1,
+          "sentiment.neg_count": 0,
+          "sentiment.total": 1,
+          "sentiment.pos_ratio": 1.0,
+          "vader.compound": 0.2023,
+          "vader.pos": 0.265,
+          "vader.neu": 0.735,
+          "vader.neg": 0.0,
+          "syntactic.num_tokens_no_stop": 7,
+          "syntactic.avg_token_no_stop_length": 4.857142857142857,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 1,
+          "sentence.avg_sentiment": 0.2023,
+          "sentence.sentiment_variance": 0,
+          "hedge.count": 0,
+          "hedge.count_type.hedge_words": 0,
+          "hedge.count_type.propositional": 0,
+          "hedge.count_type.relational": 0,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.0,
+          "hedge.nearby_sentiment_count": 0,
+          "hedge.nearby_sentiment_ratio": 0.0,
+          "hedge.prop_propositional": 0.0,
+          "hedge.prop_relational": 0.0,
+          "hedge.prop_discourse": 0.0,
+          "lexicon.pos_word=top": 1
         },
         "patterns": {
           "emails": [],
@@ -961,74 +1350,34 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 0,
-            "negative_count": 0,
-            "total_count": 0,
-            "ratio": 0.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 0,
-            "total_modifiers": 0,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": -0.8979,
-            "pos": 0.0,
-            "neu": 0.541,
-            "neg": 0.459
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 10,
-            "avg_token_no_stop_length": 5.2,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 2,
-            "avg_sentiment": -0.67215,
-            "sentiment_variance": 0.021155702500000005,
-            "sentence_sentiments": [
-              -0.5267,
-              -0.8176
-            ]
-          }
+          "sentiment.pos_count": 0,
+          "sentiment.neg_count": 2,
+          "sentiment.total": 2,
+          "sentiment.pos_ratio": 0.0,
+          "vader.compound": -0.8979,
+          "vader.pos": 0.0,
+          "vader.neu": 0.541,
+          "vader.neg": 0.459,
+          "syntactic.num_tokens_no_stop": 10,
+          "syntactic.avg_token_no_stop_length": 5.2,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 2,
+          "sentence.avg_sentiment": -0.67215,
+          "sentence.sentiment_variance": 0.021155702500000005,
+          "hedge.count": 0,
+          "hedge.count_type.hedge_words": 0,
+          "hedge.count_type.propositional": 0,
+          "hedge.count_type.relational": 0,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.0,
+          "hedge.nearby_sentiment_count": 0,
+          "hedge.nearby_sentiment_ratio": 0.0,
+          "hedge.prop_propositional": 0.0,
+          "hedge.prop_relational": 0.0,
+          "hedge.prop_discourse": 0.0,
+          "lexicon.neg_word=loser": 1,
+          "lexicon.neg_word=worse": 1
         },
         "patterns": {
           "emails": [],
@@ -2858,1862 +3207,55 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 1,
-            "negative_count": 0,
-            "total_count": 1,
-            "ratio": 1.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 1,
-            "total_modifiers": 1,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": [
-                "reasonably"
-              ]
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 1,
-              "mentions": [
-                "balance"
-              ],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.5411,
-            "pos": 0.171,
-            "neu": 0.693,
-            "neg": 0.135
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 65,
-            "avg_token_no_stop_length": 5.753846153846154,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 8,
-            "avg_sentiment": 0.033787500000000005,
-            "sentiment_variance": 0.07127530859375002,
-            "sentence_sentiments": [
-              -0.4019,
-              0.5927,
-              -0.0258,
-              0.0,
-              0.0,
-              0.0,
-              -0.121,
-              0.2263
-            ]
-          }
-        },
-        "patterns": {
-          "emails": [],
-          "dates": [],
-          "phones": [],
-          "hashtags": [],
-          "mentions": [],
-          "urls": [],
-          "emojis": []
-        }
-      },
-      {
-        "username": "Simon Mueller",
-        "rating": 1.0,
-        "timestamp": 1197241200,
-        "game_id": 3,
-        "category": "negative",
-        "raw_text": "Very similar to Tic-Tac-Toe, you're trying to \"outthink\" your opponent(s), which results in an utterly boring tile-laying practice.",
-        "clean_text": "very similar to tic-tac-toe, you're trying to \"outthink\" your opponent(s), which results in an utterly boring tile-laying practice.",
-        "language": "en",
-        "processed": {
-          "sentences": [
-            "very similar to tic-tac-toe, you're trying to \"outthink\" your opponent(s), which results in an utterly boring tile-laying practice."
-          ],
-          "tokens": [
-            "very",
-            "similar",
-            "to",
-            "tic",
-            "-",
-            "tac",
-            "-",
-            "toe",
-            ",",
-            "you",
-            "'re",
-            "trying",
-            "to",
-            "\"",
-            "outthink",
-            "\"",
-            "your",
-            "opponent(s",
-            ")",
-            ",",
-            "which",
-            "results",
-            "in",
-            "an",
-            "utterly",
-            "boring",
-            "tile",
-            "-",
-            "laying",
-            "practice",
-            "."
-          ],
-          "tokens_no_stopwords": [
-            "similar",
-            "tic",
-            "tac",
-            "toe",
-            "'re",
-            "trying",
-            "outthink",
-            "opponent(s",
-            "results",
-            "utterly",
-            "boring",
-            "tile",
-            "laying",
-            "practice"
-          ],
-          "stems": [
-            "similar",
-            "tic",
-            "tac",
-            "toe",
-            "'re",
-            "tri",
-            "outthink",
-            "opponent(",
-            "result",
-            "utterli",
-            "bore",
-            "tile",
-            "lay",
-            "practic"
-          ],
-          "lemmas": [
-            "very",
-            "similar",
-            "to",
-            "tic",
-            "-",
-            "tac",
-            "-",
-            "toe",
-            ",",
-            "you",
-            "be",
-            "try",
-            "to",
-            "\"",
-            "outthink",
-            "\"",
-            "your",
-            "opponent(s",
-            ")",
-            ",",
-            "which",
-            "result",
-            "in",
-            "an",
-            "utterly",
-            "boring",
-            "tile",
-            "-",
-            "laying",
-            "practice",
-            "."
-          ],
-          "pos_tags": [
-            [
-              "very",
-              "ADV",
-              "RB"
-            ],
-            [
-              "similar",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "to",
-              "ADP",
-              "IN"
-            ],
-            [
-              "tic",
-              "PROPN",
-              "NNP"
-            ],
-            [
-              "-",
-              "PUNCT",
-              "HYPH"
-            ],
-            [
-              "tac",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "-",
-              "PUNCT",
-              "HYPH"
-            ],
-            [
-              "toe",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "you",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "'re",
-              "AUX",
-              "VBP"
-            ],
-            [
-              "trying",
-              "VERB",
-              "VBG"
-            ],
-            [
-              "to",
-              "PART",
-              "TO"
-            ],
-            [
-              "\"",
-              "PUNCT",
-              "``"
-            ],
-            [
-              "outthink",
-              "VERB",
-              "VB"
-            ],
-            [
-              "\"",
-              "PUNCT",
-              "''"
-            ],
-            [
-              "your",
-              "PRON",
-              "PRP$"
-            ],
-            [
-              "opponent(s",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ")",
-              "PUNCT",
-              "-RRB-"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "which",
-              "PRON",
-              "WDT"
-            ],
-            [
-              "results",
-              "VERB",
-              "VBZ"
-            ],
-            [
-              "in",
-              "ADP",
-              "IN"
-            ],
-            [
-              "an",
-              "DET",
-              "DT"
-            ],
-            [
-              "utterly",
-              "ADV",
-              "RB"
-            ],
-            [
-              "boring",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "tile",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "-",
-              "PUNCT",
-              "HYPH"
-            ],
-            [
-              "laying",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "practice",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ]
-          ],
-          "dependencies": [
-            [
-              "very",
-              "advmod",
-              "similar"
-            ],
-            [
-              "similar",
-              "advmod",
-              "trying"
-            ],
-            [
-              "to",
-              "prep",
-              "similar"
-            ],
-            [
-              "tic",
-              "compound",
-              "toe"
-            ],
-            [
-              "-",
-              "punct",
-              "toe"
-            ],
-            [
-              "tac",
-              "compound",
-              "toe"
-            ],
-            [
-              "-",
-              "punct",
-              "toe"
-            ],
-            [
-              "toe",
-              "pobj",
-              "to"
-            ],
-            [
-              ",",
-              "punct",
-              "trying"
-            ],
-            [
-              "you",
-              "nsubj",
-              "trying"
-            ],
-            [
-              "'re",
-              "aux",
-              "trying"
-            ],
-            [
-              "trying",
-              "ROOT",
-              "trying"
-            ],
-            [
-              "to",
-              "aux",
-              "outthink"
-            ],
-            [
-              "\"",
-              "punct",
-              "outthink"
-            ],
-            [
-              "outthink",
-              "xcomp",
-              "trying"
-            ],
-            [
-              "\"",
-              "punct",
-              "outthink"
-            ],
-            [
-              "your",
-              "poss",
-              "opponent(s"
-            ],
-            [
-              "opponent(s",
-              "dobj",
-              "outthink"
-            ],
-            [
-              ")",
-              "punct",
-              "outthink"
-            ],
-            [
-              ",",
-              "punct",
-              "trying"
-            ],
-            [
-              "which",
-              "nsubj",
-              "results"
-            ],
-            [
-              "results",
-              "advcl",
-              "trying"
-            ],
-            [
-              "in",
-              "prep",
-              "results"
-            ],
-            [
-              "an",
-              "det",
-              "practice"
-            ],
-            [
-              "utterly",
-              "advmod",
-              "boring"
-            ],
-            [
-              "boring",
-              "amod",
-              "practice"
-            ],
-            [
-              "tile",
-              "compound",
-              "laying"
-            ],
-            [
-              "-",
-              "punct",
-              "laying"
-            ],
-            [
-              "laying",
-              "compound",
-              "practice"
-            ],
-            [
-              "practice",
-              "pobj",
-              "in"
-            ],
-            [
-              ".",
-              "punct",
-              "trying"
-            ]
-          ],
-          "entities": []
-        },
-        "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 0,
-            "negative_count": 1,
-            "total_count": 1,
-            "ratio": 0.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 1,
-            "mitigators": 0,
-            "total_modifiers": 1,
-            "examples": {
-              "intensifiers": [
-                "utterly"
-              ],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": -0.3804,
-            "pos": 0.0,
-            "neu": 0.868,
-            "neg": 0.132
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 14,
-            "avg_token_no_stop_length": 5.785714285714286,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 1,
-            "avg_sentiment": -0.3804,
-            "sentiment_variance": 0,
-            "sentence_sentiments": [
-              -0.3804
-            ]
-          }
-        },
-        "patterns": {
-          "emails": [],
-          "dates": [],
-          "phones": [],
-          "hashtags": [],
-          "mentions": [],
-          "urls": [],
-          "emojis": []
-        }
-      },
-      {
-        "username": "mac_s_1",
-        "rating": 6.0,
-        "timestamp": 1757109600,
-        "game_id": 3,
-        "category": "neutral",
-        "raw_text": "I find it hard to explain why I don't like Samurai. It's well designed, but it just rubs me the wrong way I guess. It gives me a feeling of frustration: you can only react to one problem at a time, and when it's your turn again your opponents have created two new ones.\nNot being able to do everything is normal (and good) in a game, but here it just happens in a frustrating way.",
-        "clean_text": "i find it hard to explain why i don't like samurai. it's well designed, but it just rubs me the wrong way i guess. it gives me a feeling of frustration: you can only react to one problem at a time, and when it's your turn again your opponents have created two new ones. not being able to do everything is normal (and good) in a game, but here it just happens in a frustrating way.",
-        "language": "en",
-        "processed": {
-          "sentences": [
-            "i find it hard to explain why i don't like samurai.",
-            "it's well designed, but it just rubs me the wrong way i guess.",
-            "it gives me a feeling of frustration: you can only react to one problem at a time, and when it's your turn again your opponents have created two new ones.",
-            "not being able to do everything is normal (and good) in a game, but here it just happens in a frustrating way."
-          ],
-          "tokens": [
-            "i",
-            "find",
-            "it",
-            "hard",
-            "to",
-            "explain",
-            "why",
-            "i",
-            "do",
-            "n't",
-            "like",
-            "samurai",
-            ".",
-            "it",
-            "'s",
-            "well",
-            "designed",
-            ",",
-            "but",
-            "it",
-            "just",
-            "rubs",
-            "me",
-            "the",
-            "wrong",
-            "way",
-            "i",
-            "guess",
-            ".",
-            "it",
-            "gives",
-            "me",
-            "a",
-            "feeling",
-            "of",
-            "frustration",
-            ":",
-            "you",
-            "can",
-            "only",
-            "react",
-            "to",
-            "one",
-            "problem",
-            "at",
-            "a",
-            "time",
-            ",",
-            "and",
-            "when",
-            "it",
-            "'s",
-            "your",
-            "turn",
-            "again",
-            "your",
-            "opponents",
-            "have",
-            "created",
-            "two",
-            "new",
-            "ones",
-            ".",
-            "not",
-            "being",
-            "able",
-            "to",
-            "do",
-            "everything",
-            "is",
-            "normal",
-            "(",
-            "and",
-            "good",
-            ")",
-            "in",
-            "a",
-            "game",
-            ",",
-            "but",
-            "here",
-            "it",
-            "just",
-            "happens",
-            "in",
-            "a",
-            "frustrating",
-            "way",
-            "."
-          ],
-          "tokens_no_stopwords": [
-            "find",
-            "hard",
-            "explain",
-            "n't",
-            "like",
-            "samurai",
-            "'s",
-            "well",
-            "designed",
-            "rubs",
-            "wrong",
-            "way",
-            "guess",
-            "gives",
-            "feeling",
-            "frustration",
-            "react",
-            "one",
-            "problem",
-            "time",
-            "'s",
-            "turn",
-            "opponents",
-            "created",
-            "two",
-            "new",
-            "ones",
-            "able",
-            "everything",
-            "normal",
-            "good",
-            "game",
-            "happens",
-            "frustrating",
-            "way"
-          ],
-          "stems": [
-            "find",
-            "hard",
-            "explain",
-            "n't",
-            "like",
-            "samurai",
-            "'s",
-            "well",
-            "design",
-            "rub",
-            "wrong",
-            "way",
-            "guess",
-            "give",
-            "feel",
-            "frustrat",
-            "react",
-            "one",
-            "problem",
-            "time",
-            "'s",
-            "turn",
-            "oppon",
-            "creat",
-            "two",
-            "new",
-            "one",
-            "abl",
-            "everyth",
-            "normal",
-            "good",
-            "game",
-            "happen",
-            "frustrat",
-            "way"
-          ],
-          "lemmas": [
-            "I",
-            "find",
-            "it",
-            "hard",
-            "to",
-            "explain",
-            "why",
-            "I",
-            "do",
-            "not",
-            "like",
-            "samurai",
-            ".",
-            "it",
-            "be",
-            "well",
-            "design",
-            ",",
-            "but",
-            "it",
-            "just",
-            "rub",
-            "I",
-            "the",
-            "wrong",
-            "way",
-            "I",
-            "guess",
-            ".",
-            "it",
-            "give",
-            "I",
-            "a",
-            "feeling",
-            "of",
-            "frustration",
-            ":",
-            "you",
-            "can",
-            "only",
-            "react",
-            "to",
-            "one",
-            "problem",
-            "at",
-            "a",
-            "time",
-            ",",
-            "and",
-            "when",
-            "it",
-            "be",
-            "your",
-            "turn",
-            "again",
-            "your",
-            "opponent",
-            "have",
-            "create",
-            "two",
-            "new",
-            "one",
-            ".",
-            "not",
-            "be",
-            "able",
-            "to",
-            "do",
-            "everything",
-            "be",
-            "normal",
-            "(",
-            "and",
-            "good",
-            ")",
-            "in",
-            "a",
-            "game",
-            ",",
-            "but",
-            "here",
-            "it",
-            "just",
-            "happen",
-            "in",
-            "a",
-            "frustrating",
-            "way",
-            "."
-          ],
-          "pos_tags": [
-            [
-              "i",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "find",
-              "VERB",
-              "VBP"
-            ],
-            [
-              "it",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "hard",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "to",
-              "PART",
-              "TO"
-            ],
-            [
-              "explain",
-              "VERB",
-              "VB"
-            ],
-            [
-              "why",
-              "SCONJ",
-              "WRB"
-            ],
-            [
-              "i",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "do",
-              "AUX",
-              "VBP"
-            ],
-            [
-              "n't",
-              "PART",
-              "RB"
-            ],
-            [
-              "like",
-              "VERB",
-              "VB"
-            ],
-            [
-              "samurai",
-              "PROPN",
-              "NNP"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ],
-            [
-              "it",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "'s",
-              "AUX",
-              "VBZ"
-            ],
-            [
-              "well",
-              "ADV",
-              "RB"
-            ],
-            [
-              "designed",
-              "VERB",
-              "VBN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "but",
-              "CCONJ",
-              "CC"
-            ],
-            [
-              "it",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "just",
-              "ADV",
-              "RB"
-            ],
-            [
-              "rubs",
-              "VERB",
-              "VBZ"
-            ],
-            [
-              "me",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "wrong",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "way",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "i",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "guess",
-              "VERB",
-              "VBP"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ],
-            [
-              "it",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "gives",
-              "VERB",
-              "VBZ"
-            ],
-            [
-              "me",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "a",
-              "DET",
-              "DT"
-            ],
-            [
-              "feeling",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "of",
-              "ADP",
-              "IN"
-            ],
-            [
-              "frustration",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ":",
-              "PUNCT",
-              ":"
-            ],
-            [
-              "you",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "can",
-              "AUX",
-              "MD"
-            ],
-            [
-              "only",
-              "ADV",
-              "RB"
-            ],
-            [
-              "react",
-              "VERB",
-              "VB"
-            ],
-            [
-              "to",
-              "ADP",
-              "IN"
-            ],
-            [
-              "one",
-              "NUM",
-              "CD"
-            ],
-            [
-              "problem",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "at",
-              "ADP",
-              "IN"
-            ],
-            [
-              "a",
-              "DET",
-              "DT"
-            ],
-            [
-              "time",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "and",
-              "CCONJ",
-              "CC"
-            ],
-            [
-              "when",
-              "SCONJ",
-              "WRB"
-            ],
-            [
-              "it",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "'s",
-              "AUX",
-              "VBZ"
-            ],
-            [
-              "your",
-              "PRON",
-              "PRP$"
-            ],
-            [
-              "turn",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "again",
-              "ADV",
-              "RB"
-            ],
-            [
-              "your",
-              "PRON",
-              "PRP$"
-            ],
-            [
-              "opponents",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "have",
-              "AUX",
-              "VBP"
-            ],
-            [
-              "created",
-              "VERB",
-              "VBN"
-            ],
-            [
-              "two",
-              "NUM",
-              "CD"
-            ],
-            [
-              "new",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "ones",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ],
-            [
-              "not",
-              "PART",
-              "RB"
-            ],
-            [
-              "being",
-              "AUX",
-              "VBG"
-            ],
-            [
-              "able",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "to",
-              "PART",
-              "TO"
-            ],
-            [
-              "do",
-              "VERB",
-              "VB"
-            ],
-            [
-              "everything",
-              "PRON",
-              "NN"
-            ],
-            [
-              "is",
-              "AUX",
-              "VBZ"
-            ],
-            [
-              "normal",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "(",
-              "PUNCT",
-              "-LRB-"
-            ],
-            [
-              "and",
-              "CCONJ",
-              "CC"
-            ],
-            [
-              "good",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              ")",
-              "PUNCT",
-              "-RRB-"
-            ],
-            [
-              "in",
-              "ADP",
-              "IN"
-            ],
-            [
-              "a",
-              "DET",
-              "DT"
-            ],
-            [
-              "game",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "but",
-              "CCONJ",
-              "CC"
-            ],
-            [
-              "here",
-              "ADV",
-              "RB"
-            ],
-            [
-              "it",
-              "PRON",
-              "PRP"
-            ],
-            [
-              "just",
-              "ADV",
-              "RB"
-            ],
-            [
-              "happens",
-              "VERB",
-              "VBZ"
-            ],
-            [
-              "in",
-              "ADP",
-              "IN"
-            ],
-            [
-              "a",
-              "DET",
-              "DT"
-            ],
-            [
-              "frustrating",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "way",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ]
-          ],
-          "dependencies": [
-            [
-              "i",
-              "nsubj",
-              "find"
-            ],
-            [
-              "find",
-              "ROOT",
-              "find"
-            ],
-            [
-              "it",
-              "nsubj",
-              "hard"
-            ],
-            [
-              "hard",
-              "ccomp",
-              "find"
-            ],
-            [
-              "to",
-              "aux",
-              "explain"
-            ],
-            [
-              "explain",
-              "advcl",
-              "hard"
-            ],
-            [
-              "why",
-              "advmod",
-              "like"
-            ],
-            [
-              "i",
-              "nsubj",
-              "like"
-            ],
-            [
-              "do",
-              "aux",
-              "like"
-            ],
-            [
-              "n't",
-              "neg",
-              "like"
-            ],
-            [
-              "like",
-              "ccomp",
-              "explain"
-            ],
-            [
-              "samurai",
-              "dobj",
-              "like"
-            ],
-            [
-              ".",
-              "punct",
-              "find"
-            ],
-            [
-              "it",
-              "nsubj",
-              "'s"
-            ],
-            [
-              "'s",
-              "ROOT",
-              "'s"
-            ],
-            [
-              "well",
-              "advmod",
-              "designed"
-            ],
-            [
-              "designed",
-              "acomp",
-              "'s"
-            ],
-            [
-              ",",
-              "punct",
-              "'s"
-            ],
-            [
-              "but",
-              "cc",
-              "'s"
-            ],
-            [
-              "it",
-              "nsubj",
-              "rubs"
-            ],
-            [
-              "just",
-              "advmod",
-              "rubs"
-            ],
-            [
-              "rubs",
-              "ccomp",
-              "guess"
-            ],
-            [
-              "me",
-              "dobj",
-              "rubs"
-            ],
-            [
-              "the",
-              "det",
-              "way"
-            ],
-            [
-              "wrong",
-              "amod",
-              "way"
-            ],
-            [
-              "way",
-              "npadvmod",
-              "rubs"
-            ],
-            [
-              "i",
-              "nsubj",
-              "guess"
-            ],
-            [
-              "guess",
-              "conj",
-              "'s"
-            ],
-            [
-              ".",
-              "punct",
-              "guess"
-            ],
-            [
-              "it",
-              "nsubj",
-              "gives"
-            ],
-            [
-              "gives",
-              "ccomp",
-              "react"
-            ],
-            [
-              "me",
-              "dative",
-              "gives"
-            ],
-            [
-              "a",
-              "det",
-              "feeling"
-            ],
-            [
-              "feeling",
-              "dobj",
-              "gives"
-            ],
-            [
-              "of",
-              "prep",
-              "feeling"
-            ],
-            [
-              "frustration",
-              "pobj",
-              "of"
-            ],
-            [
-              ":",
-              "punct",
-              "react"
-            ],
-            [
-              "you",
-              "nsubj",
-              "react"
-            ],
-            [
-              "can",
-              "aux",
-              "react"
-            ],
-            [
-              "only",
-              "advmod",
-              "react"
-            ],
-            [
-              "react",
-              "ROOT",
-              "react"
-            ],
-            [
-              "to",
-              "prep",
-              "react"
-            ],
-            [
-              "one",
-              "nummod",
-              "problem"
-            ],
-            [
-              "problem",
-              "pobj",
-              "to"
-            ],
-            [
-              "at",
-              "prep",
-              "react"
-            ],
-            [
-              "a",
-              "det",
-              "time"
-            ],
-            [
-              "time",
-              "pobj",
-              "at"
-            ],
-            [
-              ",",
-              "punct",
-              "react"
-            ],
-            [
-              "and",
-              "cc",
-              "react"
-            ],
-            [
-              "when",
-              "advmod",
-              "'s"
-            ],
-            [
-              "it",
-              "nsubj",
-              "'s"
-            ],
-            [
-              "'s",
-              "advcl",
-              "created"
-            ],
-            [
-              "your",
-              "poss",
-              "turn"
-            ],
-            [
-              "turn",
-              "attr",
-              "'s"
-            ],
-            [
-              "again",
-              "advmod",
-              "'s"
-            ],
-            [
-              "your",
-              "poss",
-              "opponents"
-            ],
-            [
-              "opponents",
-              "nsubj",
-              "created"
-            ],
-            [
-              "have",
-              "aux",
-              "created"
-            ],
-            [
-              "created",
-              "conj",
-              "react"
-            ],
-            [
-              "two",
-              "nummod",
-              "ones"
-            ],
-            [
-              "new",
-              "amod",
-              "ones"
-            ],
-            [
-              "ones",
-              "dobj",
-              "created"
-            ],
-            [
-              ".",
-              "punct",
-              "react"
-            ],
-            [
-              "not",
-              "neg",
-              "being"
-            ],
-            [
-              "being",
-              "csubj",
-              "is"
-            ],
-            [
-              "able",
-              "acomp",
-              "being"
-            ],
-            [
-              "to",
-              "aux",
-              "do"
-            ],
-            [
-              "do",
-              "xcomp",
-              "able"
-            ],
-            [
-              "everything",
-              "dobj",
-              "do"
-            ],
-            [
-              "is",
-              "ROOT",
-              "is"
-            ],
-            [
-              "normal",
-              "acomp",
-              "is"
-            ],
-            [
-              "(",
-              "punct",
-              "normal"
-            ],
-            [
-              "and",
-              "cc",
-              "normal"
-            ],
-            [
-              "good",
-              "conj",
-              "normal"
-            ],
-            [
-              ")",
-              "punct",
-              "good"
-            ],
-            [
-              "in",
-              "prep",
-              "is"
-            ],
-            [
-              "a",
-              "det",
-              "game"
-            ],
-            [
-              "game",
-              "pobj",
-              "in"
-            ],
-            [
-              ",",
-              "punct",
-              "is"
-            ],
-            [
-              "but",
-              "cc",
-              "is"
-            ],
-            [
-              "here",
-              "advmod",
-              "happens"
-            ],
-            [
-              "it",
-              "nsubj",
-              "happens"
-            ],
-            [
-              "just",
-              "advmod",
-              "happens"
-            ],
-            [
-              "happens",
-              "conj",
-              "is"
-            ],
-            [
-              "in",
-              "prep",
-              "happens"
-            ],
-            [
-              "a",
-              "det",
-              "way"
-            ],
-            [
-              "frustrating",
-              "amod",
-              "way"
-            ],
-            [
-              "way",
-              "pobj",
-              "in"
-            ],
-            [
-              ".",
-              "punct",
-              "happens"
-            ]
-          ],
-          "entities": [
-            [
-              "samurai",
-              "WORK_OF_ART"
-            ],
-            [
-              "one",
-              "CARDINAL"
-            ],
-            [
-              "two",
-              "CARDINAL"
-            ]
-          ]
-        },
-        "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 1,
-            "negative_count": 1,
-            "total_count": 2,
-            "ratio": 0.5
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 2,
-            "mitigators": 0,
-            "total_modifiers": 2,
-            "examples": {
-              "intensifiers": [
-                "way",
-                "way"
-              ],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 1,
-              "mentions": [
-                "turn"
-              ],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 1,
-              "mentions": [
-                "design"
-              ],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": -0.9281,
-            "pos": 0.069,
-            "neu": 0.712,
-            "neg": 0.219
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 35,
-            "avg_token_no_stop_length": 5.228571428571429,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 4,
-            "avg_sentiment": -0.5059750000000001,
-            "sentiment_variance": 0.007642961874999999,
-            "sentence_sentiments": [
-              -0.3632,
-              -0.5574,
-              -0.5106,
-              -0.5927
-            ]
-          }
+          "sentiment.pos_count": 7,
+          "sentiment.neg_count": 6,
+          "sentiment.total": 13,
+          "sentiment.pos_ratio": 0.5384615384615384,
+          "vader.compound": 0.5411,
+          "vader.pos": 0.171,
+          "vader.neu": 0.693,
+          "vader.neg": 0.135,
+          "syntactic.num_tokens_no_stop": 65,
+          "syntactic.avg_token_no_stop_length": 5.753846153846154,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 8,
+          "sentence.avg_sentiment": 0.033787500000000005,
+          "sentence.sentiment_variance": 0.07127530859375002,
+          "hedge.count": 1,
+          "hedge.count_type.hedge_words": 1,
+          "hedge.count_type.propositional": 0,
+          "hedge.count_type.relational": 1,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.015384615384615385,
+          "hedge.nearby_sentiment_count": 3,
+          "hedge.nearby_sentiment_ratio": 0.23076923076923078,
+          "hedge.prop_propositional": 0.0,
+          "hedge.prop_relational": 1.0,
+          "hedge.prop_discourse": 0.0,
+          "hedge.words=probably": 1,
+          "hedge.relational=probably": 1,
+          "hedge.all=probably": 1,
+          "hedge.nearby_sentiment_words=worth": 1,
+          "hedge.nearby_sentiment_words=coolest": 1,
+          "hedge.nearby_sentiment_words=seamless": 1,
+          "domain.gameplay=balance": 1,
+          "domain.gameplay=scaling": 1,
+          "domain.player_count_and_modes=scaling": 1,
+          "domain.misc=skill": 1,
+          "lexicon.pos_word=reasonably": 1,
+          "lexicon.pos_word=engrossing": 1,
+          "lexicon.pos_word=good": 1,
+          "lexicon.pos_word=skill": 1,
+          "lexicon.pos_word=worth": 1,
+          "lexicon.pos_word=coolest": 1,
+          "lexicon.pos_word=seamless": 1,
+          "lexicon.neg_word=inexorable": 1,
+          "lexicon.neg_word=problem": 1,
+          "lexicon.neg_word=negate": 1,
+          "lexicon.neg_word=inefficiently": 1,
+          "lexicon.neg_word=worse": 1,
+          "lexicon.neg_word=screwed": 1
         },
         "patterns": {
           "emails": [],
@@ -5167,75 +3709,47 @@
           "entities": []
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 0,
-            "negative_count": 0,
-            "total_count": 0,
-            "ratio": 0.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 1,
-            "mitigators": 0,
-            "total_modifiers": 1,
-            "examples": {
-              "intensifiers": [
-                "much"
-              ],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": -0.2023,
-            "pos": 0.097,
-            "neu": 0.775,
-            "neg": 0.128
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 15,
-            "avg_token_no_stop_length": 5.266666666666667,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 1,
-            "avg_sentiment": -0.2023,
-            "sentiment_variance": 0,
-            "sentence_sentiments": [
-              -0.2023
-            ]
-          }
+          "sentiment.pos_count": 2,
+          "sentiment.neg_count": 2,
+          "sentiment.total": 4,
+          "sentiment.pos_ratio": 0.5,
+          "vader.compound": -0.2023,
+          "vader.pos": 0.097,
+          "vader.neu": 0.775,
+          "vader.neg": 0.128,
+          "syntactic.num_tokens_no_stop": 15,
+          "syntactic.avg_token_no_stop_length": 5.266666666666667,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 1,
+          "sentence.avg_sentiment": -0.2023,
+          "sentence.sentiment_variance": 0,
+          "hedge.count": 3,
+          "hedge.count_type.hedge_words": 1,
+          "hedge.count_type.propositional": 2,
+          "hedge.count_type.relational": 1,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.2,
+          "hedge.nearby_sentiment_count": 7,
+          "hedge.nearby_sentiment_ratio": 1.75,
+          "hedge.prop_propositional": 0.6666666666666666,
+          "hedge.prop_relational": 0.3333333333333333,
+          "hedge.prop_discourse": 0.0,
+          "hedge.words=think": 1,
+          "hedge.propositional=much": 1,
+          "hedge.propositional=like": 1,
+          "hedge.relational=think": 1,
+          "hedge.all=much": 1,
+          "hedge.all=think": 1,
+          "hedge.all=like": 1,
+          "hedge.nearby_sentiment_words=tickle": 2,
+          "hedge.nearby_sentiment_words=like": 2,
+          "hedge.nearby_sentiment_words=obnoxiously": 2,
+          "hedge.nearby_sentiment_words=scratchy": 1,
+          "lexicon.pos_word=tickle": 1,
+          "lexicon.pos_word=like": 1,
+          "lexicon.neg_word=obnoxiously": 1,
+          "lexicon.neg_word=scratchy": 1
         },
         "patterns": {
           "emails": [],
@@ -6472,2012 +4986,64 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 2,
-            "negative_count": 0,
-            "total_count": 2,
-            "ratio": 1.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 1,
-            "mitigators": 2,
-            "total_modifiers": 3,
-            "examples": {
-              "intensifiers": [
-                "much"
-              ],
-              "mitigators": [
-                "rather",
-                "pretty"
-              ]
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.8897,
-            "pos": 0.217,
-            "neu": 0.682,
-            "neg": 0.101
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 40,
-            "avg_token_no_stop_length": 5.025,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 5,
-            "avg_sentiment": 0.13432000000000002,
-            "sentiment_variance": 0.21326343360000005,
-            "sentence_sentiments": [
-              -0.3824,
-              -0.296,
-              0.5994,
-              0.7506,
-              0.0
-            ]
-          }
-        },
-        "patterns": {
-          "emails": [],
-          "dates": [],
-          "phones": [],
-          "hashtags": [],
-          "mentions": [],
-          "urls": [],
-          "emojis": []
-        }
-      },
-      {
-        "username": "purplecow55",
-        "rating": 5.0,
-        "timestamp": 1757887200,
-        "game_id": 3,
-        "category": "neutral",
-        "raw_text": "A tactical tile laying game with area control where players take turns placing 1 tile onto the board (maybe more with special tiles). If the token spaces ever surround by user played tiles, for each icon (3 types), the player with the highest sum of like icon on surround tiles gains icon, where samurais and ships are wild. Once 4 pieces are out of the game or all of 1 type is off the game board, game ends. Winner is determined by the player with the most majorities of the 3 types, tie breaker is the most non majority pieces, followed by sum of most pieces.",
-        "clean_text": "a tactical tile laying game with area control where players take turns placing 1 tile onto the board (maybe more with special tiles). if the token spaces ever surround by user played tiles, for each icon (3 types), the player with the highest sum of like icon on surround tiles gains icon, where samurais and ships are wild. once 4 pieces are out of the game or all of 1 type is off the game board, game ends. winner is determined by the player with the most majorities of the 3 types, tie breaker is the most non majority pieces, followed by sum of most pieces.",
-        "language": "en",
-        "processed": {
-          "sentences": [
-            "a tactical tile laying game with area control where players take turns placing 1 tile onto the board (maybe more with special tiles).",
-            "if the token spaces ever surround by user played tiles, for each icon (3 types), the player with the highest sum of like icon on surround tiles gains icon, where samurais and ships are wild.",
-            "once 4 pieces are out of the game or all of 1 type is off the game board, game ends.",
-            "winner is determined by the player with the most majorities of the 3 types, tie breaker is the most non majority pieces, followed by sum of most pieces."
-          ],
-          "tokens": [
-            "a",
-            "tactical",
-            "tile",
-            "laying",
-            "game",
-            "with",
-            "area",
-            "control",
-            "where",
-            "players",
-            "take",
-            "turns",
-            "placing",
-            "1",
-            "tile",
-            "onto",
-            "the",
-            "board",
-            "(",
-            "maybe",
-            "more",
-            "with",
-            "special",
-            "tiles",
-            ")",
-            ".",
-            "if",
-            "the",
-            "token",
-            "spaces",
-            "ever",
-            "surround",
-            "by",
-            "user",
-            "played",
-            "tiles",
-            ",",
-            "for",
-            "each",
-            "icon",
-            "(",
-            "3",
-            "types",
-            ")",
-            ",",
-            "the",
-            "player",
-            "with",
-            "the",
-            "highest",
-            "sum",
-            "of",
-            "like",
-            "icon",
-            "on",
-            "surround",
-            "tiles",
-            "gains",
-            "icon",
-            ",",
-            "where",
-            "samurais",
-            "and",
-            "ships",
-            "are",
-            "wild",
-            ".",
-            "once",
-            "4",
-            "pieces",
-            "are",
-            "out",
-            "of",
-            "the",
-            "game",
-            "or",
-            "all",
-            "of",
-            "1",
-            "type",
-            "is",
-            "off",
-            "the",
-            "game",
-            "board",
-            ",",
-            "game",
-            "ends",
-            ".",
-            "winner",
-            "is",
-            "determined",
-            "by",
-            "the",
-            "player",
-            "with",
-            "the",
-            "most",
-            "majorities",
-            "of",
-            "the",
-            "3",
-            "types",
-            ",",
-            "tie",
-            "breaker",
-            "is",
-            "the",
-            "most",
-            "non",
-            "majority",
-            "pieces",
-            ",",
-            "followed",
-            "by",
-            "sum",
-            "of",
-            "most",
-            "pieces",
-            "."
-          ],
-          "tokens_no_stopwords": [
-            "tactical",
-            "tile",
-            "laying",
-            "game",
-            "area",
-            "control",
-            "players",
-            "take",
-            "turns",
-            "placing",
-            "1",
-            "tile",
-            "onto",
-            "board",
-            "maybe",
-            "special",
-            "tiles",
-            "token",
-            "spaces",
-            "ever",
-            "surround",
-            "user",
-            "played",
-            "tiles",
-            "icon",
-            "3",
-            "types",
-            "player",
-            "highest",
-            "sum",
-            "like",
-            "icon",
-            "surround",
-            "tiles",
-            "gains",
-            "icon",
-            "samurais",
-            "ships",
-            "wild",
-            "4",
-            "pieces",
-            "game",
-            "1",
-            "type",
-            "game",
-            "board",
-            "game",
-            "ends",
-            "winner",
-            "determined",
-            "player",
-            "majorities",
-            "3",
-            "types",
-            "tie",
-            "breaker",
-            "non",
-            "majority",
-            "pieces",
-            "followed",
-            "sum",
-            "pieces"
-          ],
-          "stems": [
-            "tactic",
-            "tile",
-            "lay",
-            "game",
-            "area",
-            "control",
-            "player",
-            "take",
-            "turn",
-            "place",
-            "1",
-            "tile",
-            "onto",
-            "board",
-            "mayb",
-            "special",
-            "tile",
-            "token",
-            "space",
-            "ever",
-            "surround",
-            "user",
-            "play",
-            "tile",
-            "icon",
-            "3",
-            "type",
-            "player",
-            "highest",
-            "sum",
-            "like",
-            "icon",
-            "surround",
-            "tile",
-            "gain",
-            "icon",
-            "samurai",
-            "ship",
-            "wild",
-            "4",
-            "piec",
-            "game",
-            "1",
-            "type",
-            "game",
-            "board",
-            "game",
-            "end",
-            "winner",
-            "determin",
-            "player",
-            "major",
-            "3",
-            "type",
-            "tie",
-            "breaker",
-            "non",
-            "major",
-            "piec",
-            "follow",
-            "sum",
-            "piec"
-          ],
-          "lemmas": [
-            "a",
-            "tactical",
-            "tile",
-            "lay",
-            "game",
-            "with",
-            "area",
-            "control",
-            "where",
-            "player",
-            "take",
-            "turn",
-            "place",
-            "1",
-            "tile",
-            "onto",
-            "the",
-            "board",
-            "(",
-            "maybe",
-            "more",
-            "with",
-            "special",
-            "tile",
-            ")",
-            ".",
-            "if",
-            "the",
-            "token",
-            "space",
-            "ever",
-            "surround",
-            "by",
-            "user",
-            "play",
-            "tile",
-            ",",
-            "for",
-            "each",
-            "icon",
-            "(",
-            "3",
-            "type",
-            ")",
-            ",",
-            "the",
-            "player",
-            "with",
-            "the",
-            "high",
-            "sum",
-            "of",
-            "like",
-            "icon",
-            "on",
-            "surround",
-            "tile",
-            "gain",
-            "icon",
-            ",",
-            "where",
-            "samurai",
-            "and",
-            "ship",
-            "be",
-            "wild",
-            ".",
-            "once",
-            "4",
-            "piece",
-            "be",
-            "out",
-            "of",
-            "the",
-            "game",
-            "or",
-            "all",
-            "of",
-            "1",
-            "type",
-            "be",
-            "off",
-            "the",
-            "game",
-            "board",
-            ",",
-            "game",
-            "end",
-            ".",
-            "winner",
-            "be",
-            "determine",
-            "by",
-            "the",
-            "player",
-            "with",
-            "the",
-            "most",
-            "majority",
-            "of",
-            "the",
-            "3",
-            "type",
-            ",",
-            "tie",
-            "breaker",
-            "be",
-            "the",
-            "most",
-            "non",
-            "majority",
-            "piece",
-            ",",
-            "follow",
-            "by",
-            "sum",
-            "of",
-            "most",
-            "piece",
-            "."
-          ],
-          "pos_tags": [
-            [
-              "a",
-              "DET",
-              "DT"
-            ],
-            [
-              "tactical",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "tile",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "laying",
-              "VERB",
-              "VBG"
-            ],
-            [
-              "game",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "with",
-              "ADP",
-              "IN"
-            ],
-            [
-              "area",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "control",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "where",
-              "SCONJ",
-              "WRB"
-            ],
-            [
-              "players",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "take",
-              "VERB",
-              "VBP"
-            ],
-            [
-              "turns",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "placing",
-              "VERB",
-              "VBG"
-            ],
-            [
-              "1",
-              "NUM",
-              "CD"
-            ],
-            [
-              "tile",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "onto",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "board",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "(",
-              "PUNCT",
-              "-LRB-"
-            ],
-            [
-              "maybe",
-              "ADV",
-              "RB"
-            ],
-            [
-              "more",
-              "ADJ",
-              "JJR"
-            ],
-            [
-              "with",
-              "ADP",
-              "IN"
-            ],
-            [
-              "special",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "tiles",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ")",
-              "PUNCT",
-              "-RRB-"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ],
-            [
-              "if",
-              "SCONJ",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "token",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "spaces",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "ever",
-              "ADV",
-              "RB"
-            ],
-            [
-              "surround",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "by",
-              "ADP",
-              "IN"
-            ],
-            [
-              "user",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "played",
-              "VERB",
-              "VBN"
-            ],
-            [
-              "tiles",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "for",
-              "ADP",
-              "IN"
-            ],
-            [
-              "each",
-              "DET",
-              "DT"
-            ],
-            [
-              "icon",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "(",
-              "PUNCT",
-              "-LRB-"
-            ],
-            [
-              "3",
-              "NUM",
-              "CD"
-            ],
-            [
-              "types",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ")",
-              "PUNCT",
-              "-RRB-"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "player",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "with",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "highest",
-              "ADJ",
-              "JJS"
-            ],
-            [
-              "sum",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "of",
-              "ADP",
-              "IN"
-            ],
-            [
-              "like",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "icon",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "on",
-              "ADP",
-              "IN"
-            ],
-            [
-              "surround",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              "tiles",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "gains",
-              "VERB",
-              "VBZ"
-            ],
-            [
-              "icon",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "where",
-              "SCONJ",
-              "WRB"
-            ],
-            [
-              "samurais",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "and",
-              "CCONJ",
-              "CC"
-            ],
-            [
-              "ships",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "are",
-              "AUX",
-              "VBP"
-            ],
-            [
-              "wild",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ],
-            [
-              "once",
-              "SCONJ",
-              "IN"
-            ],
-            [
-              "4",
-              "NUM",
-              "CD"
-            ],
-            [
-              "pieces",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "are",
-              "AUX",
-              "VBP"
-            ],
-            [
-              "out",
-              "ADP",
-              "IN"
-            ],
-            [
-              "of",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "game",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "or",
-              "CCONJ",
-              "CC"
-            ],
-            [
-              "all",
-              "PRON",
-              "DT"
-            ],
-            [
-              "of",
-              "ADP",
-              "IN"
-            ],
-            [
-              "1",
-              "NUM",
-              "CD"
-            ],
-            [
-              "type",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "is",
-              "AUX",
-              "VBZ"
-            ],
-            [
-              "off",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "game",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "board",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "game",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "ends",
-              "VERB",
-              "VBZ"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ],
-            [
-              "winner",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "is",
-              "AUX",
-              "VBZ"
-            ],
-            [
-              "determined",
-              "VERB",
-              "VBN"
-            ],
-            [
-              "by",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "player",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "with",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "most",
-              "ADJ",
-              "JJS"
-            ],
-            [
-              "majorities",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "of",
-              "ADP",
-              "IN"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "3",
-              "NUM",
-              "CD"
-            ],
-            [
-              "types",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "tie",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "breaker",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "is",
-              "AUX",
-              "VBZ"
-            ],
-            [
-              "the",
-              "DET",
-              "DT"
-            ],
-            [
-              "most",
-              "ADJ",
-              "JJS"
-            ],
-            [
-              "non",
-              "ADJ",
-              "AFX"
-            ],
-            [
-              "majority",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "pieces",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "followed",
-              "VERB",
-              "VBN"
-            ],
-            [
-              "by",
-              "ADP",
-              "IN"
-            ],
-            [
-              "sum",
-              "NOUN",
-              "NN"
-            ],
-            [
-              "of",
-              "ADP",
-              "IN"
-            ],
-            [
-              "most",
-              "ADJ",
-              "JJS"
-            ],
-            [
-              "pieces",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ]
-          ],
-          "dependencies": [
-            [
-              "a",
-              "det",
-              "game"
-            ],
-            [
-              "tactical",
-              "amod",
-              "game"
-            ],
-            [
-              "tile",
-              "npadvmod",
-              "laying"
-            ],
-            [
-              "laying",
-              "amod",
-              "game"
-            ],
-            [
-              "game",
-              "ROOT",
-              "game"
-            ],
-            [
-              "with",
-              "prep",
-              "game"
-            ],
-            [
-              "area",
-              "compound",
-              "control"
-            ],
-            [
-              "control",
-              "pobj",
-              "with"
-            ],
-            [
-              "where",
-              "advmod",
-              "take"
-            ],
-            [
-              "players",
-              "nsubj",
-              "take"
-            ],
-            [
-              "take",
-              "relcl",
-              "game"
-            ],
-            [
-              "turns",
-              "dobj",
-              "take"
-            ],
-            [
-              "placing",
-              "advcl",
-              "take"
-            ],
-            [
-              "1",
-              "nummod",
-              "tile"
-            ],
-            [
-              "tile",
-              "dobj",
-              "placing"
-            ],
-            [
-              "onto",
-              "prep",
-              "placing"
-            ],
-            [
-              "the",
-              "det",
-              "board"
-            ],
-            [
-              "board",
-              "pobj",
-              "onto"
-            ],
-            [
-              "(",
-              "punct",
-              "placing"
-            ],
-            [
-              "maybe",
-              "advmod",
-              "more"
-            ],
-            [
-              "more",
-              "dobj",
-              "placing"
-            ],
-            [
-              "with",
-              "prep",
-              "more"
-            ],
-            [
-              "special",
-              "amod",
-              "tiles"
-            ],
-            [
-              "tiles",
-              "pobj",
-              "with"
-            ],
-            [
-              ")",
-              "punct",
-              "placing"
-            ],
-            [
-              ".",
-              "punct",
-              "game"
-            ],
-            [
-              "if",
-              "mark",
-              "played"
-            ],
-            [
-              "the",
-              "det",
-              "spaces"
-            ],
-            [
-              "token",
-              "amod",
-              "spaces"
-            ],
-            [
-              "spaces",
-              "nsubj",
-              "played"
-            ],
-            [
-              "ever",
-              "advmod",
-              "surround"
-            ],
-            [
-              "surround",
-              "acl",
-              "spaces"
-            ],
-            [
-              "by",
-              "agent",
-              "surround"
-            ],
-            [
-              "user",
-              "npadvmod",
-              "played"
-            ],
-            [
-              "played",
-              "advcl",
-              "gains"
-            ],
-            [
-              "tiles",
-              "dobj",
-              "played"
-            ],
-            [
-              ",",
-              "punct",
-              "gains"
-            ],
-            [
-              "for",
-              "prep",
-              "gains"
-            ],
-            [
-              "each",
-              "det",
-              "icon"
-            ],
-            [
-              "icon",
-              "pobj",
-              "for"
-            ],
-            [
-              "(",
-              "punct",
-              "icon"
-            ],
-            [
-              "3",
-              "nummod",
-              "types"
-            ],
-            [
-              "types",
-              "appos",
-              "icon"
-            ],
-            [
-              ")",
-              "punct",
-              "icon"
-            ],
-            [
-              ",",
-              "punct",
-              "gains"
-            ],
-            [
-              "the",
-              "det",
-              "player"
-            ],
-            [
-              "player",
-              "nsubj",
-              "gains"
-            ],
-            [
-              "with",
-              "prep",
-              "player"
-            ],
-            [
-              "the",
-              "det",
-              "sum"
-            ],
-            [
-              "highest",
-              "amod",
-              "sum"
-            ],
-            [
-              "sum",
-              "pobj",
-              "with"
-            ],
-            [
-              "of",
-              "prep",
-              "sum"
-            ],
-            [
-              "like",
-              "amod",
-              "icon"
-            ],
-            [
-              "icon",
-              "pobj",
-              "of"
-            ],
-            [
-              "on",
-              "prep",
-              "sum"
-            ],
-            [
-              "surround",
-              "amod",
-              "tiles"
-            ],
-            [
-              "tiles",
-              "pobj",
-              "on"
-            ],
-            [
-              "gains",
-              "ROOT",
-              "gains"
-            ],
-            [
-              "icon",
-              "dobj",
-              "gains"
-            ],
-            [
-              ",",
-              "punct",
-              "icon"
-            ],
-            [
-              "where",
-              "advmod",
-              "are"
-            ],
-            [
-              "samurais",
-              "nsubj",
-              "are"
-            ],
-            [
-              "and",
-              "cc",
-              "samurais"
-            ],
-            [
-              "ships",
-              "conj",
-              "samurais"
-            ],
-            [
-              "are",
-              "relcl",
-              "icon"
-            ],
-            [
-              "wild",
-              "acomp",
-              "are"
-            ],
-            [
-              ".",
-              "punct",
-              "gains"
-            ],
-            [
-              "once",
-              "mark",
-              "are"
-            ],
-            [
-              "4",
-              "nummod",
-              "pieces"
-            ],
-            [
-              "pieces",
-              "nsubj",
-              "are"
-            ],
-            [
-              "are",
-              "advcl",
-              "ends"
-            ],
-            [
-              "out",
-              "prep",
-              "are"
-            ],
-            [
-              "of",
-              "prep",
-              "out"
-            ],
-            [
-              "the",
-              "det",
-              "game"
-            ],
-            [
-              "game",
-              "pobj",
-              "of"
-            ],
-            [
-              "or",
-              "cc",
-              "are"
-            ],
-            [
-              "all",
-              "nsubj",
-              "is"
-            ],
-            [
-              "of",
-              "prep",
-              "all"
-            ],
-            [
-              "1",
-              "nummod",
-              "type"
-            ],
-            [
-              "type",
-              "pobj",
-              "of"
-            ],
-            [
-              "is",
-              "conj",
-              "are"
-            ],
-            [
-              "off",
-              "prep",
-              "is"
-            ],
-            [
-              "the",
-              "det",
-              "board"
-            ],
-            [
-              "game",
-              "compound",
-              "board"
-            ],
-            [
-              "board",
-              "pobj",
-              "off"
-            ],
-            [
-              ",",
-              "punct",
-              "ends"
-            ],
-            [
-              "game",
-              "nsubj",
-              "ends"
-            ],
-            [
-              "ends",
-              "ROOT",
-              "ends"
-            ],
-            [
-              ".",
-              "punct",
-              "ends"
-            ],
-            [
-              "winner",
-              "nsubjpass",
-              "determined"
-            ],
-            [
-              "is",
-              "auxpass",
-              "determined"
-            ],
-            [
-              "determined",
-              "ccomp",
-              "is"
-            ],
-            [
-              "by",
-              "agent",
-              "determined"
-            ],
-            [
-              "the",
-              "det",
-              "player"
-            ],
-            [
-              "player",
-              "pobj",
-              "by"
-            ],
-            [
-              "with",
-              "prep",
-              "player"
-            ],
-            [
-              "the",
-              "det",
-              "majorities"
-            ],
-            [
-              "most",
-              "amod",
-              "majorities"
-            ],
-            [
-              "majorities",
-              "pobj",
-              "with"
-            ],
-            [
-              "of",
-              "prep",
-              "majorities"
-            ],
-            [
-              "the",
-              "det",
-              "types"
-            ],
-            [
-              "3",
-              "nummod",
-              "types"
-            ],
-            [
-              "types",
-              "pobj",
-              "of"
-            ],
-            [
-              ",",
-              "punct",
-              "is"
-            ],
-            [
-              "tie",
-              "compound",
-              "breaker"
-            ],
-            [
-              "breaker",
-              "nsubj",
-              "is"
-            ],
-            [
-              "is",
-              "ROOT",
-              "is"
-            ],
-            [
-              "the",
-              "det",
-              "pieces"
-            ],
-            [
-              "most",
-              "amod",
-              "pieces"
-            ],
-            [
-              "non",
-              "nmod",
-              "majority"
-            ],
-            [
-              "majority",
-              "nmod",
-              "pieces"
-            ],
-            [
-              "pieces",
-              "attr",
-              "is"
-            ],
-            [
-              ",",
-              "punct",
-              "is"
-            ],
-            [
-              "followed",
-              "advcl",
-              "is"
-            ],
-            [
-              "by",
-              "agent",
-              "followed"
-            ],
-            [
-              "sum",
-              "pobj",
-              "by"
-            ],
-            [
-              "of",
-              "prep",
-              "sum"
-            ],
-            [
-              "most",
-              "amod",
-              "pieces"
-            ],
-            [
-              "pieces",
-              "pobj",
-              "of"
-            ],
-            [
-              ".",
-              "punct",
-              "is"
-            ]
-          ],
-          "entities": [
-            [
-              "1",
-              "CARDINAL"
-            ],
-            [
-              "3",
-              "CARDINAL"
-            ],
-            [
-              "4",
-              "CARDINAL"
-            ],
-            [
-              "1",
-              "CARDINAL"
-            ],
-            [
-              "3",
-              "CARDINAL"
-            ]
-          ]
-        },
-        "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 0,
-            "negative_count": 0,
-            "total_count": 0,
-            "ratio": 0.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 0,
-            "total_modifiers": 0,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 3,
-              "mentions": [
-                "turn",
-                "board",
-                "board"
-              ],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 2,
-              "mentions": [
-                "board",
-                "board"
-              ],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.938,
-            "pos": 0.148,
-            "neu": 0.852,
-            "neg": 0.0
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 62,
-            "avg_token_no_stop_length": 5.048387096774194,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 4,
-            "avg_sentiment": 0.48324999999999996,
-            "sentiment_variance": 0.0913081925,
-            "sentence_sentiments": [
-              0.4549,
-              0.743,
-              0.0,
-              0.7351
-            ]
-          }
-        },
-        "patterns": {
-          "emails": [],
-          "dates": [],
-          "phones": [],
-          "hashtags": [],
-          "mentions": [],
-          "urls": [],
-          "emojis": []
-        }
-      },
-      {
-        "username": "JustinRRizzo",
-        "rating": 7.0,
-        "timestamp": 1760824800,
-        "game_id": 3,
-        "category": "positive",
-        "raw_text": "Smushed corner, splitting seams, components excellent.",
-        "clean_text": "smushed corner, splitting seams, components excellent.",
-        "language": "en",
-        "processed": {
-          "sentences": [
-            "smushed corner, splitting seams, components excellent."
-          ],
-          "tokens": [
-            "smushed",
-            "corner",
-            ",",
-            "splitting",
-            "seams",
-            ",",
-            "components",
-            "excellent",
-            "."
-          ],
-          "tokens_no_stopwords": [
-            "smushed",
-            "corner",
-            "splitting",
-            "seams",
-            "components",
-            "excellent"
-          ],
-          "stems": [
-            "smush",
-            "corner",
-            "split",
-            "seam",
-            "compon",
-            "excel"
-          ],
-          "lemmas": [
-            "smushe",
-            "corner",
-            ",",
-            "split",
-            "seam",
-            ",",
-            "component",
-            "excellent",
-            "."
-          ],
-          "pos_tags": [
-            [
-              "smushed",
-              "VERB",
-              "VBN"
-            ],
-            [
-              "corner",
-              "NOUN",
-              "NN"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "splitting",
-              "VERB",
-              "VBG"
-            ],
-            [
-              "seams",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              ",",
-              "PUNCT",
-              ","
-            ],
-            [
-              "components",
-              "NOUN",
-              "NNS"
-            ],
-            [
-              "excellent",
-              "ADJ",
-              "JJ"
-            ],
-            [
-              ".",
-              "PUNCT",
-              "."
-            ]
-          ],
-          "dependencies": [
-            [
-              "smushed",
-              "amod",
-              "corner"
-            ],
-            [
-              "corner",
-              "dep",
-              "excellent"
-            ],
-            [
-              ",",
-              "punct",
-              "corner"
-            ],
-            [
-              "splitting",
-              "amod",
-              "seams"
-            ],
-            [
-              "seams",
-              "appos",
-              "corner"
-            ],
-            [
-              ",",
-              "punct",
-              "corner"
-            ],
-            [
-              "components",
-              "nsubj",
-              "excellent"
-            ],
-            [
-              "excellent",
-              "ROOT",
-              "excellent"
-            ],
-            [
-              ".",
-              "punct",
-              "excellent"
-            ]
-          ],
-          "entities": []
-        },
-        "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 1,
-            "negative_count": 0,
-            "total_count": 1,
-            "ratio": 1.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 0,
-            "total_modifiers": 0,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.5719,
-            "pos": 0.425,
-            "neu": 0.575,
-            "neg": 0.0
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 6,
-            "avg_token_no_stop_length": 7.666666666666667,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 1,
-            "avg_sentiment": 0.5719,
-            "sentiment_variance": 0,
-            "sentence_sentiments": [
-              0.5719
-            ]
-          }
+          "sentiment.pos_count": 5,
+          "sentiment.neg_count": 2,
+          "sentiment.total": 7,
+          "sentiment.pos_ratio": 0.7142857142857143,
+          "vader.compound": 0.8897,
+          "vader.pos": 0.217,
+          "vader.neu": 0.682,
+          "vader.neg": 0.101,
+          "syntactic.num_tokens_no_stop": 40,
+          "syntactic.avg_token_no_stop_length": 5.025,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 5,
+          "sentence.avg_sentiment": 0.13432000000000002,
+          "sentence.sentiment_variance": 0.21326343360000005,
+          "hedge.count": 8,
+          "hedge.count_type.hedge_words": 4,
+          "hedge.count_type.propositional": 4,
+          "hedge.count_type.relational": 1,
+          "hedge.count_type.discourse_markers": 3,
+          "hedge.density": 0.2,
+          "hedge.nearby_sentiment_count": 8,
+          "hedge.nearby_sentiment_ratio": 1.1428571428571428,
+          "hedge.prop_propositional": 0.5,
+          "hedge.prop_relational": 0.125,
+          "hedge.prop_discourse": 0.375,
+          "hedge.words=might": 1,
+          "hedge.words=would": 2,
+          "hedge.words=rather": 1,
+          "hedge.propositional=like": 1,
+          "hedge.propositional=rather": 1,
+          "hedge.propositional=pretty": 1,
+          "hedge.propositional=much": 1,
+          "hedge.relational=might": 1,
+          "hedge.discourse_marker=although": 1,
+          "hedge.discourse_marker=rather": 1,
+          "hedge.discourse_marker=pretty": 1,
+          "hedge.all=although": 1,
+          "hedge.all=might": 1,
+          "hedge.all=would": 2,
+          "hedge.all=like": 1,
+          "hedge.all=rather": 1,
+          "hedge.all=pretty": 1,
+          "hedge.all=much": 1,
+          "hedge.nearby_sentiment_words=like": 2,
+          "hedge.nearby_sentiment_words=pretty": 4,
+          "hedge.nearby_sentiment_words=luck": 2,
+          "domain.replayability_variability=randomness": 1,
+          "domain.genres_and_styles=abstract": 1,
+          "domain.misc=fun": 1,
+          "domain.misc=luck": 1,
+          "lexicon.pos_word=good": 1,
+          "lexicon.pos_word=fun": 1,
+          "lexicon.pos_word=like": 1,
+          "lexicon.pos_word=pretty": 1,
+          "lexicon.pos_word=luck": 1,
+          "lexicon.neg_word=arbitrary": 1,
+          "lexicon.neg_word=overrated": 1
         },
         "patterns": {
           "emails": [],
@@ -9055,76 +5621,43 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 2,
-            "negative_count": 0,
-            "total_count": 2,
-            "ratio": 1.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 0,
-            "mitigators": 0,
-            "total_modifiers": 0,
-            "examples": {
-              "intensifiers": [],
-              "mitigators": []
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.7564,
-            "pos": 0.233,
-            "neu": 0.694,
-            "neg": 0.072
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 19,
-            "avg_token_no_stop_length": 5.105263157894737,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 4,
-            "avg_sentiment": 0.17152499999999998,
-            "sentiment_variance": 0.20513632687500002,
-            "sentence_sentiments": [
-              0.7906,
-              -0.4445,
-              0.0,
-              0.34
-            ]
-          }
+          "sentiment.pos_count": 2,
+          "sentiment.neg_count": 1,
+          "sentiment.total": 3,
+          "sentiment.pos_ratio": 0.6666666666666666,
+          "vader.compound": 0.7564,
+          "vader.pos": 0.233,
+          "vader.neu": 0.694,
+          "vader.neg": 0.072,
+          "syntactic.num_tokens_no_stop": 19,
+          "syntactic.avg_token_no_stop_length": 5.105263157894737,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 4,
+          "sentence.avg_sentiment": 0.17152499999999998,
+          "sentence.sentiment_variance": 0.20513632687500002,
+          "hedge.count": 2,
+          "hedge.count_type.hedge_words": 1,
+          "hedge.count_type.propositional": 1,
+          "hedge.count_type.relational": 1,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.10526315789473684,
+          "hedge.nearby_sentiment_count": 1,
+          "hedge.nearby_sentiment_ratio": 0.3333333333333333,
+          "hedge.prop_propositional": 0.5,
+          "hedge.prop_relational": 0.5,
+          "hedge.prop_discourse": 0.0,
+          "hedge.words=think": 1,
+          "hedge.propositional=often": 1,
+          "hedge.relational=think": 1,
+          "hedge.all=think": 1,
+          "hedge.all=often": 1,
+          "hedge.nearby_sentiment_words=chaotic": 1,
+          "domain.scoring_and_victory=scoring": 1,
+          "lexicon.mitigator=little": 1,
+          "lexicon.pos_word=good": 1,
+          "lexicon.pos_word=great": 1,
+          "lexicon.neg_word=chaotic": 1
         },
         "patterns": {
           "emails": [],
@@ -13456,101 +9989,3184 @@
           ]
         },
         "linguistic_features": {
-          "sentiment_words": {
-            "positive_count": 4,
-            "negative_count": 0,
-            "total_count": 4,
-            "ratio": 1.0
-          },
-          "negations": {
-            "count": 0,
-            "positions": [],
-            "negated_terms": []
-          },
-          "intensifiers_mitigators": {
-            "intensifiers": 5,
-            "mitigators": 1,
-            "total_modifiers": 6,
-            "examples": {
-              "intensifiers": [
-                "much",
-                "much",
-                "quite",
-                "much",
-                "way"
-              ],
-              "mitigators": [
-                "quite"
-              ]
-            }
-          },
-          "domain_specific": {
-            "mechanics": {
-              "count": 1,
-              "mentions": [
-                "board"
-              ],
-              "nearby_sentiments": []
-            },
-            "components": {
-              "count": 2,
-              "mentions": [
-                "board",
-                "design"
-              ],
-              "nearby_sentiments": []
-            },
-            "rules": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "gameplay": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            },
-            "theme": {
-              "count": 0,
-              "mentions": [],
-              "nearby_sentiments": []
-            }
-          },
-          "vader_scores": {
-            "compound": 0.9255,
-            "pos": 0.176,
-            "neu": 0.702,
-            "neg": 0.122
-          },
-          "syntactic_complexity": {
-            "num_tokens_no_stop": 150,
-            "avg_token_no_stop_length": 5.56,
-            "avg_dep_depth": 0,
-            "num_dependencies": 0
-          },
-          "sentence_level": {
-            "num_sentences": 16,
-            "avg_sentiment": 0.20826875,
-            "sentiment_variance": 0.12992936839843752,
-            "sentence_sentiments": [
-              0.25,
-              0.6236,
-              0.34,
-              0.659,
-              0.0,
-              0.4678,
-              -0.3182,
-              0.4101,
-              -0.1655,
-              0.34,
-              0.2263,
-              0.0,
-              0.0,
-              -0.6199,
-              0.7579,
-              0.3612
+          "sentiment.pos_count": 15,
+          "sentiment.neg_count": 9,
+          "sentiment.total": 24,
+          "sentiment.pos_ratio": 0.625,
+          "vader.compound": 0.9255,
+          "vader.pos": 0.176,
+          "vader.neu": 0.702,
+          "vader.neg": 0.122,
+          "syntactic.num_tokens_no_stop": 150,
+          "syntactic.avg_token_no_stop_length": 5.56,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 16,
+          "sentence.avg_sentiment": 0.20826875,
+          "sentence.sentiment_variance": 0.12992936839843752,
+          "hedge.count": 14,
+          "hedge.count_type.hedge_words": 7,
+          "hedge.count_type.propositional": 4,
+          "hedge.count_type.relational": 9,
+          "hedge.count_type.discourse_markers": 3,
+          "hedge.density": 0.09333333333333334,
+          "hedge.nearby_sentiment_count": 13,
+          "hedge.nearby_sentiment_ratio": 0.5416666666666666,
+          "hedge.prop_propositional": 0.2857142857142857,
+          "hedge.prop_relational": 0.6428571428571429,
+          "hedge.prop_discourse": 0.21428571428571427,
+          "hedge.words=might": 2,
+          "hedge.words=think": 2,
+          "hedge.words=could": 1,
+          "hedge.words=expect": 1,
+          "hedge.words=likely": 1,
+          "hedge.propositional=much": 3,
+          "hedge.propositional=often": 1,
+          "hedge.relational=perhaps": 2,
+          "hedge.relational=might": 2,
+          "hedge.relational=think": 2,
+          "hedge.relational=could": 1,
+          "hedge.relational=expect": 1,
+          "hedge.relational=likely": 1,
+          "hedge.discourse_marker=perhaps": 2,
+          "hedge.discourse_marker=well": 1,
+          "hedge.all=perhaps": 2,
+          "hedge.all=might": 2,
+          "hedge.all=much": 3,
+          "hedge.all=think": 2,
+          "hedge.all=well": 1,
+          "hedge.all=could": 1,
+          "hedge.all=expect": 1,
+          "hedge.all=likely": 1,
+          "hedge.all=often": 1,
+          "hedge.nearby_sentiment_words=prefer": 1,
+          "hedge.nearby_sentiment_words=interesting": 1,
+          "hedge.nearby_sentiment_words=well": 1,
+          "hedge.nearby_sentiment_words=enough": 2,
+          "hedge.nearby_sentiment_words=trouble": 2,
+          "hedge.nearby_sentiment_words=desert": 2,
+          "hedge.nearby_sentiment_words=rampant": 1,
+          "hedge.nearby_sentiment_words=favorite": 1,
+          "hedge.nearby_sentiment_words=better": 1,
+          "hedge.nearby_sentiment_words=hard": 1,
+          "domain.components=board": 1,
+          "domain.complexity_and_difficulty=light": 1,
+          "lexicon.intensifier=quite": 1,
+          "lexicon.mitigator=little": 1,
+          "lexicon.pos_word=good": 1,
+          "lexicon.pos_word=prefer": 1,
+          "lexicon.pos_word=fast": 1,
+          "lexicon.pos_word=strong": 2,
+          "lexicon.pos_word=important": 1,
+          "lexicon.pos_word=interesting": 1,
+          "lexicon.pos_word=win": 1,
+          "lexicon.pos_word=well": 1,
+          "lexicon.pos_word=smart": 1,
+          "lexicon.pos_word=enough": 1,
+          "lexicon.pos_word=favorite": 2,
+          "lexicon.pos_word=adore": 1,
+          "lexicon.pos_word=better": 1,
+          "lexicon.neg_word=devastated": 1,
+          "lexicon.neg_word=limited": 1,
+          "lexicon.neg_word=conflict": 1,
+          "lexicon.neg_word=devastate": 1,
+          "lexicon.neg_word=trouble": 1,
+          "lexicon.neg_word=desert": 2,
+          "lexicon.neg_word=rampant": 1,
+          "lexicon.neg_word=hard": 1
+        },
+        "patterns": {
+          "emails": [],
+          "dates": [],
+          "phones": [],
+          "hashtags": [],
+          "mentions": [],
+          "urls": [],
+          "emojis": []
+        }
+      },
+      {
+        "username": "JustinRRizzo",
+        "rating": 7.0,
+        "timestamp": 1760824800,
+        "game_id": 3,
+        "category": "positive",
+        "raw_text": "Smushed corner, splitting seams, components excellent.",
+        "clean_text": "smushed corner, splitting seams, components excellent.",
+        "language": "en",
+        "processed": {
+          "sentences": [
+            "smushed corner, splitting seams, components excellent."
+          ],
+          "tokens": [
+            "smushed",
+            "corner",
+            ",",
+            "splitting",
+            "seams",
+            ",",
+            "components",
+            "excellent",
+            "."
+          ],
+          "tokens_no_stopwords": [
+            "smushed",
+            "corner",
+            "splitting",
+            "seams",
+            "components",
+            "excellent"
+          ],
+          "stems": [
+            "smush",
+            "corner",
+            "split",
+            "seam",
+            "compon",
+            "excel"
+          ],
+          "lemmas": [
+            "smushe",
+            "corner",
+            ",",
+            "split",
+            "seam",
+            ",",
+            "component",
+            "excellent",
+            "."
+          ],
+          "pos_tags": [
+            [
+              "smushed",
+              "VERB",
+              "VBN"
+            ],
+            [
+              "corner",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "splitting",
+              "VERB",
+              "VBG"
+            ],
+            [
+              "seams",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "components",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "excellent",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
             ]
-          }
+          ],
+          "dependencies": [
+            [
+              "smushed",
+              "amod",
+              "corner"
+            ],
+            [
+              "corner",
+              "dep",
+              "excellent"
+            ],
+            [
+              ",",
+              "punct",
+              "corner"
+            ],
+            [
+              "splitting",
+              "amod",
+              "seams"
+            ],
+            [
+              "seams",
+              "appos",
+              "corner"
+            ],
+            [
+              ",",
+              "punct",
+              "corner"
+            ],
+            [
+              "components",
+              "nsubj",
+              "excellent"
+            ],
+            [
+              "excellent",
+              "ROOT",
+              "excellent"
+            ],
+            [
+              ".",
+              "punct",
+              "excellent"
+            ]
+          ],
+          "entities": []
+        },
+        "linguistic_features": {
+          "sentiment.pos_count": 1,
+          "sentiment.neg_count": 1,
+          "sentiment.total": 2,
+          "sentiment.pos_ratio": 0.5,
+          "vader.compound": 0.5719,
+          "vader.pos": 0.425,
+          "vader.neu": 0.575,
+          "vader.neg": 0.0,
+          "syntactic.num_tokens_no_stop": 6,
+          "syntactic.avg_token_no_stop_length": 7.666666666666667,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 1,
+          "sentence.avg_sentiment": 0.5719,
+          "sentence.sentiment_variance": 0,
+          "hedge.count": 0,
+          "hedge.count_type.hedge_words": 0,
+          "hedge.count_type.propositional": 0,
+          "hedge.count_type.relational": 0,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.0,
+          "hedge.nearby_sentiment_count": 0,
+          "hedge.nearby_sentiment_ratio": 0.0,
+          "hedge.prop_propositional": 0.0,
+          "hedge.prop_relational": 0.0,
+          "hedge.prop_discourse": 0.0,
+          "lexicon.pos_word=excellent": 1,
+          "lexicon.neg_word=splitting": 1
+        },
+        "patterns": {
+          "emails": [],
+          "dates": [],
+          "phones": [],
+          "hashtags": [],
+          "mentions": [],
+          "urls": [],
+          "emojis": []
+        }
+      },
+      {
+        "username": "mac_s_1",
+        "rating": 6.0,
+        "timestamp": 1757109600,
+        "game_id": 3,
+        "category": "neutral",
+        "raw_text": "I find it hard to explain why I don't like Samurai. It's well designed, but it just rubs me the wrong way I guess. It gives me a feeling of frustration: you can only react to one problem at a time, and when it's your turn again your opponents have created two new ones.\nNot being able to do everything is normal (and good) in a game, but here it just happens in a frustrating way.",
+        "clean_text": "i find it hard to explain why i don't like samurai. it's well designed, but it just rubs me the wrong way i guess. it gives me a feeling of frustration: you can only react to one problem at a time, and when it's your turn again your opponents have created two new ones. not being able to do everything is normal (and good) in a game, but here it just happens in a frustrating way.",
+        "language": "en",
+        "processed": {
+          "sentences": [
+            "i find it hard to explain why i don't like samurai.",
+            "it's well designed, but it just rubs me the wrong way i guess.",
+            "it gives me a feeling of frustration: you can only react to one problem at a time, and when it's your turn again your opponents have created two new ones.",
+            "not being able to do everything is normal (and good) in a game, but here it just happens in a frustrating way."
+          ],
+          "tokens": [
+            "i",
+            "find",
+            "it",
+            "hard",
+            "to",
+            "explain",
+            "why",
+            "i",
+            "do",
+            "n't",
+            "like",
+            "samurai",
+            ".",
+            "it",
+            "'s",
+            "well",
+            "designed",
+            ",",
+            "but",
+            "it",
+            "just",
+            "rubs",
+            "me",
+            "the",
+            "wrong",
+            "way",
+            "i",
+            "guess",
+            ".",
+            "it",
+            "gives",
+            "me",
+            "a",
+            "feeling",
+            "of",
+            "frustration",
+            ":",
+            "you",
+            "can",
+            "only",
+            "react",
+            "to",
+            "one",
+            "problem",
+            "at",
+            "a",
+            "time",
+            ",",
+            "and",
+            "when",
+            "it",
+            "'s",
+            "your",
+            "turn",
+            "again",
+            "your",
+            "opponents",
+            "have",
+            "created",
+            "two",
+            "new",
+            "ones",
+            ".",
+            "not",
+            "being",
+            "able",
+            "to",
+            "do",
+            "everything",
+            "is",
+            "normal",
+            "(",
+            "and",
+            "good",
+            ")",
+            "in",
+            "a",
+            "game",
+            ",",
+            "but",
+            "here",
+            "it",
+            "just",
+            "happens",
+            "in",
+            "a",
+            "frustrating",
+            "way",
+            "."
+          ],
+          "tokens_no_stopwords": [
+            "find",
+            "hard",
+            "explain",
+            "n't",
+            "like",
+            "samurai",
+            "'s",
+            "well",
+            "designed",
+            "rubs",
+            "wrong",
+            "way",
+            "guess",
+            "gives",
+            "feeling",
+            "frustration",
+            "react",
+            "one",
+            "problem",
+            "time",
+            "'s",
+            "turn",
+            "opponents",
+            "created",
+            "two",
+            "new",
+            "ones",
+            "able",
+            "everything",
+            "normal",
+            "good",
+            "game",
+            "happens",
+            "frustrating",
+            "way"
+          ],
+          "stems": [
+            "find",
+            "hard",
+            "explain",
+            "n't",
+            "like",
+            "samurai",
+            "'s",
+            "well",
+            "design",
+            "rub",
+            "wrong",
+            "way",
+            "guess",
+            "give",
+            "feel",
+            "frustrat",
+            "react",
+            "one",
+            "problem",
+            "time",
+            "'s",
+            "turn",
+            "oppon",
+            "creat",
+            "two",
+            "new",
+            "one",
+            "abl",
+            "everyth",
+            "normal",
+            "good",
+            "game",
+            "happen",
+            "frustrat",
+            "way"
+          ],
+          "lemmas": [
+            "I",
+            "find",
+            "it",
+            "hard",
+            "to",
+            "explain",
+            "why",
+            "I",
+            "do",
+            "not",
+            "like",
+            "samurai",
+            ".",
+            "it",
+            "be",
+            "well",
+            "design",
+            ",",
+            "but",
+            "it",
+            "just",
+            "rub",
+            "I",
+            "the",
+            "wrong",
+            "way",
+            "I",
+            "guess",
+            ".",
+            "it",
+            "give",
+            "I",
+            "a",
+            "feeling",
+            "of",
+            "frustration",
+            ":",
+            "you",
+            "can",
+            "only",
+            "react",
+            "to",
+            "one",
+            "problem",
+            "at",
+            "a",
+            "time",
+            ",",
+            "and",
+            "when",
+            "it",
+            "be",
+            "your",
+            "turn",
+            "again",
+            "your",
+            "opponent",
+            "have",
+            "create",
+            "two",
+            "new",
+            "one",
+            ".",
+            "not",
+            "be",
+            "able",
+            "to",
+            "do",
+            "everything",
+            "be",
+            "normal",
+            "(",
+            "and",
+            "good",
+            ")",
+            "in",
+            "a",
+            "game",
+            ",",
+            "but",
+            "here",
+            "it",
+            "just",
+            "happen",
+            "in",
+            "a",
+            "frustrating",
+            "way",
+            "."
+          ],
+          "pos_tags": [
+            [
+              "i",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "find",
+              "VERB",
+              "VBP"
+            ],
+            [
+              "it",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "hard",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "to",
+              "PART",
+              "TO"
+            ],
+            [
+              "explain",
+              "VERB",
+              "VB"
+            ],
+            [
+              "why",
+              "SCONJ",
+              "WRB"
+            ],
+            [
+              "i",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "do",
+              "AUX",
+              "VBP"
+            ],
+            [
+              "n't",
+              "PART",
+              "RB"
+            ],
+            [
+              "like",
+              "VERB",
+              "VB"
+            ],
+            [
+              "samurai",
+              "PROPN",
+              "NNP"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ],
+            [
+              "it",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "'s",
+              "AUX",
+              "VBZ"
+            ],
+            [
+              "well",
+              "ADV",
+              "RB"
+            ],
+            [
+              "designed",
+              "VERB",
+              "VBN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "but",
+              "CCONJ",
+              "CC"
+            ],
+            [
+              "it",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "just",
+              "ADV",
+              "RB"
+            ],
+            [
+              "rubs",
+              "VERB",
+              "VBZ"
+            ],
+            [
+              "me",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "wrong",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "way",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "i",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "guess",
+              "VERB",
+              "VBP"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ],
+            [
+              "it",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "gives",
+              "VERB",
+              "VBZ"
+            ],
+            [
+              "me",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "a",
+              "DET",
+              "DT"
+            ],
+            [
+              "feeling",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "of",
+              "ADP",
+              "IN"
+            ],
+            [
+              "frustration",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ":",
+              "PUNCT",
+              ":"
+            ],
+            [
+              "you",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "can",
+              "AUX",
+              "MD"
+            ],
+            [
+              "only",
+              "ADV",
+              "RB"
+            ],
+            [
+              "react",
+              "VERB",
+              "VB"
+            ],
+            [
+              "to",
+              "ADP",
+              "IN"
+            ],
+            [
+              "one",
+              "NUM",
+              "CD"
+            ],
+            [
+              "problem",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "at",
+              "ADP",
+              "IN"
+            ],
+            [
+              "a",
+              "DET",
+              "DT"
+            ],
+            [
+              "time",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "and",
+              "CCONJ",
+              "CC"
+            ],
+            [
+              "when",
+              "SCONJ",
+              "WRB"
+            ],
+            [
+              "it",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "'s",
+              "AUX",
+              "VBZ"
+            ],
+            [
+              "your",
+              "PRON",
+              "PRP$"
+            ],
+            [
+              "turn",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "again",
+              "ADV",
+              "RB"
+            ],
+            [
+              "your",
+              "PRON",
+              "PRP$"
+            ],
+            [
+              "opponents",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "have",
+              "AUX",
+              "VBP"
+            ],
+            [
+              "created",
+              "VERB",
+              "VBN"
+            ],
+            [
+              "two",
+              "NUM",
+              "CD"
+            ],
+            [
+              "new",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "ones",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ],
+            [
+              "not",
+              "PART",
+              "RB"
+            ],
+            [
+              "being",
+              "AUX",
+              "VBG"
+            ],
+            [
+              "able",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "to",
+              "PART",
+              "TO"
+            ],
+            [
+              "do",
+              "VERB",
+              "VB"
+            ],
+            [
+              "everything",
+              "PRON",
+              "NN"
+            ],
+            [
+              "is",
+              "AUX",
+              "VBZ"
+            ],
+            [
+              "normal",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "(",
+              "PUNCT",
+              "-LRB-"
+            ],
+            [
+              "and",
+              "CCONJ",
+              "CC"
+            ],
+            [
+              "good",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              ")",
+              "PUNCT",
+              "-RRB-"
+            ],
+            [
+              "in",
+              "ADP",
+              "IN"
+            ],
+            [
+              "a",
+              "DET",
+              "DT"
+            ],
+            [
+              "game",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "but",
+              "CCONJ",
+              "CC"
+            ],
+            [
+              "here",
+              "ADV",
+              "RB"
+            ],
+            [
+              "it",
+              "PRON",
+              "PRP"
+            ],
+            [
+              "just",
+              "ADV",
+              "RB"
+            ],
+            [
+              "happens",
+              "VERB",
+              "VBZ"
+            ],
+            [
+              "in",
+              "ADP",
+              "IN"
+            ],
+            [
+              "a",
+              "DET",
+              "DT"
+            ],
+            [
+              "frustrating",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "way",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ]
+          ],
+          "dependencies": [
+            [
+              "i",
+              "nsubj",
+              "find"
+            ],
+            [
+              "find",
+              "ROOT",
+              "find"
+            ],
+            [
+              "it",
+              "nsubj",
+              "hard"
+            ],
+            [
+              "hard",
+              "ccomp",
+              "find"
+            ],
+            [
+              "to",
+              "aux",
+              "explain"
+            ],
+            [
+              "explain",
+              "advcl",
+              "hard"
+            ],
+            [
+              "why",
+              "advmod",
+              "like"
+            ],
+            [
+              "i",
+              "nsubj",
+              "like"
+            ],
+            [
+              "do",
+              "aux",
+              "like"
+            ],
+            [
+              "n't",
+              "neg",
+              "like"
+            ],
+            [
+              "like",
+              "ccomp",
+              "explain"
+            ],
+            [
+              "samurai",
+              "dobj",
+              "like"
+            ],
+            [
+              ".",
+              "punct",
+              "find"
+            ],
+            [
+              "it",
+              "nsubj",
+              "'s"
+            ],
+            [
+              "'s",
+              "ROOT",
+              "'s"
+            ],
+            [
+              "well",
+              "advmod",
+              "designed"
+            ],
+            [
+              "designed",
+              "acomp",
+              "'s"
+            ],
+            [
+              ",",
+              "punct",
+              "'s"
+            ],
+            [
+              "but",
+              "cc",
+              "'s"
+            ],
+            [
+              "it",
+              "nsubj",
+              "rubs"
+            ],
+            [
+              "just",
+              "advmod",
+              "rubs"
+            ],
+            [
+              "rubs",
+              "ccomp",
+              "guess"
+            ],
+            [
+              "me",
+              "dobj",
+              "rubs"
+            ],
+            [
+              "the",
+              "det",
+              "way"
+            ],
+            [
+              "wrong",
+              "amod",
+              "way"
+            ],
+            [
+              "way",
+              "npadvmod",
+              "rubs"
+            ],
+            [
+              "i",
+              "nsubj",
+              "guess"
+            ],
+            [
+              "guess",
+              "conj",
+              "'s"
+            ],
+            [
+              ".",
+              "punct",
+              "guess"
+            ],
+            [
+              "it",
+              "nsubj",
+              "gives"
+            ],
+            [
+              "gives",
+              "ccomp",
+              "react"
+            ],
+            [
+              "me",
+              "dative",
+              "gives"
+            ],
+            [
+              "a",
+              "det",
+              "feeling"
+            ],
+            [
+              "feeling",
+              "dobj",
+              "gives"
+            ],
+            [
+              "of",
+              "prep",
+              "feeling"
+            ],
+            [
+              "frustration",
+              "pobj",
+              "of"
+            ],
+            [
+              ":",
+              "punct",
+              "react"
+            ],
+            [
+              "you",
+              "nsubj",
+              "react"
+            ],
+            [
+              "can",
+              "aux",
+              "react"
+            ],
+            [
+              "only",
+              "advmod",
+              "react"
+            ],
+            [
+              "react",
+              "ROOT",
+              "react"
+            ],
+            [
+              "to",
+              "prep",
+              "react"
+            ],
+            [
+              "one",
+              "nummod",
+              "problem"
+            ],
+            [
+              "problem",
+              "pobj",
+              "to"
+            ],
+            [
+              "at",
+              "prep",
+              "react"
+            ],
+            [
+              "a",
+              "det",
+              "time"
+            ],
+            [
+              "time",
+              "pobj",
+              "at"
+            ],
+            [
+              ",",
+              "punct",
+              "react"
+            ],
+            [
+              "and",
+              "cc",
+              "react"
+            ],
+            [
+              "when",
+              "advmod",
+              "'s"
+            ],
+            [
+              "it",
+              "nsubj",
+              "'s"
+            ],
+            [
+              "'s",
+              "advcl",
+              "created"
+            ],
+            [
+              "your",
+              "poss",
+              "turn"
+            ],
+            [
+              "turn",
+              "attr",
+              "'s"
+            ],
+            [
+              "again",
+              "advmod",
+              "'s"
+            ],
+            [
+              "your",
+              "poss",
+              "opponents"
+            ],
+            [
+              "opponents",
+              "nsubj",
+              "created"
+            ],
+            [
+              "have",
+              "aux",
+              "created"
+            ],
+            [
+              "created",
+              "conj",
+              "react"
+            ],
+            [
+              "two",
+              "nummod",
+              "ones"
+            ],
+            [
+              "new",
+              "amod",
+              "ones"
+            ],
+            [
+              "ones",
+              "dobj",
+              "created"
+            ],
+            [
+              ".",
+              "punct",
+              "react"
+            ],
+            [
+              "not",
+              "neg",
+              "being"
+            ],
+            [
+              "being",
+              "csubj",
+              "is"
+            ],
+            [
+              "able",
+              "acomp",
+              "being"
+            ],
+            [
+              "to",
+              "aux",
+              "do"
+            ],
+            [
+              "do",
+              "xcomp",
+              "able"
+            ],
+            [
+              "everything",
+              "dobj",
+              "do"
+            ],
+            [
+              "is",
+              "ROOT",
+              "is"
+            ],
+            [
+              "normal",
+              "acomp",
+              "is"
+            ],
+            [
+              "(",
+              "punct",
+              "normal"
+            ],
+            [
+              "and",
+              "cc",
+              "normal"
+            ],
+            [
+              "good",
+              "conj",
+              "normal"
+            ],
+            [
+              ")",
+              "punct",
+              "good"
+            ],
+            [
+              "in",
+              "prep",
+              "is"
+            ],
+            [
+              "a",
+              "det",
+              "game"
+            ],
+            [
+              "game",
+              "pobj",
+              "in"
+            ],
+            [
+              ",",
+              "punct",
+              "is"
+            ],
+            [
+              "but",
+              "cc",
+              "is"
+            ],
+            [
+              "here",
+              "advmod",
+              "happens"
+            ],
+            [
+              "it",
+              "nsubj",
+              "happens"
+            ],
+            [
+              "just",
+              "advmod",
+              "happens"
+            ],
+            [
+              "happens",
+              "conj",
+              "is"
+            ],
+            [
+              "in",
+              "prep",
+              "happens"
+            ],
+            [
+              "a",
+              "det",
+              "way"
+            ],
+            [
+              "frustrating",
+              "amod",
+              "way"
+            ],
+            [
+              "way",
+              "pobj",
+              "in"
+            ],
+            [
+              ".",
+              "punct",
+              "happens"
+            ]
+          ],
+          "entities": [
+            [
+              "samurai",
+              "WORK_OF_ART"
+            ],
+            [
+              "one",
+              "CARDINAL"
+            ],
+            [
+              "two",
+              "CARDINAL"
+            ]
+          ]
+        },
+        "linguistic_features": {
+          "sentiment.pos_count": 3,
+          "sentiment.neg_count": 5,
+          "sentiment.total": 8,
+          "sentiment.pos_ratio": 0.375,
+          "vader.compound": -0.9281,
+          "vader.pos": 0.069,
+          "vader.neu": 0.712,
+          "vader.neg": 0.219,
+          "syntactic.num_tokens_no_stop": 35,
+          "syntactic.avg_token_no_stop_length": 5.228571428571429,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 4,
+          "sentence.avg_sentiment": -0.5059750000000001,
+          "sentence.sentiment_variance": 0.007642961874999999,
+          "hedge.count": 4,
+          "hedge.count_type.hedge_words": 1,
+          "hedge.count_type.propositional": 1,
+          "hedge.count_type.relational": 2,
+          "hedge.count_type.discourse_markers": 1,
+          "hedge.density": 0.11428571428571428,
+          "hedge.nearby_sentiment_count": 9,
+          "hedge.nearby_sentiment_ratio": 1.125,
+          "hedge.prop_propositional": 0.25,
+          "hedge.prop_relational": 0.5,
+          "hedge.prop_discourse": 0.25,
+          "hedge.words=guess": 1,
+          "hedge.propositional=like": 1,
+          "hedge.relational=find": 1,
+          "hedge.relational=guess": 1,
+          "hedge.discourse_marker=well": 1,
+          "hedge.all=find": 1,
+          "hedge.all=like": 1,
+          "hedge.all=well": 1,
+          "hedge.all=guess": 1,
+          "hedge.nearby_sentiment_words=hard": 2,
+          "hedge.nearby_sentiment_words=like": 2,
+          "hedge.nearby_sentiment_words=well": 2,
+          "hedge.nearby_sentiment_words=wrong": 2,
+          "hedge.nearby_sentiment_words=frustration": 1,
+          "domain.misc=frustration": 1,
+          "lexicon.pos_word=like": 1,
+          "lexicon.pos_word=well": 1,
+          "lexicon.pos_word=good": 1,
+          "lexicon.neg_word=hard": 1,
+          "lexicon.neg_word=wrong": 1,
+          "lexicon.neg_word=frustration": 1,
+          "lexicon.neg_word=problem": 1,
+          "lexicon.neg_word=frustrating": 1
+        },
+        "patterns": {
+          "emails": [],
+          "dates": [],
+          "phones": [],
+          "hashtags": [],
+          "mentions": [],
+          "urls": [],
+          "emojis": []
+        }
+      },
+      {
+        "username": "purplecow55",
+        "rating": 5.0,
+        "timestamp": 1757887200,
+        "game_id": 3,
+        "category": "neutral",
+        "raw_text": "A tactical tile laying game with area control where players take turns placing 1 tile onto the board (maybe more with special tiles). If the token spaces ever surround by user played tiles, for each icon (3 types), the player with the highest sum of like icon on surround tiles gains icon, where samurais and ships are wild. Once 4 pieces are out of the game or all of 1 type is off the game board, game ends. Winner is determined by the player with the most majorities of the 3 types, tie breaker is the most non majority pieces, followed by sum of most pieces.",
+        "clean_text": "a tactical tile laying game with area control where players take turns placing 1 tile onto the board (maybe more with special tiles). if the token spaces ever surround by user played tiles, for each icon (3 types), the player with the highest sum of like icon on surround tiles gains icon, where samurais and ships are wild. once 4 pieces are out of the game or all of 1 type is off the game board, game ends. winner is determined by the player with the most majorities of the 3 types, tie breaker is the most non majority pieces, followed by sum of most pieces.",
+        "language": "en",
+        "processed": {
+          "sentences": [
+            "a tactical tile laying game with area control where players take turns placing 1 tile onto the board (maybe more with special tiles).",
+            "if the token spaces ever surround by user played tiles, for each icon (3 types), the player with the highest sum of like icon on surround tiles gains icon, where samurais and ships are wild.",
+            "once 4 pieces are out of the game or all of 1 type is off the game board, game ends.",
+            "winner is determined by the player with the most majorities of the 3 types, tie breaker is the most non majority pieces, followed by sum of most pieces."
+          ],
+          "tokens": [
+            "a",
+            "tactical",
+            "tile",
+            "laying",
+            "game",
+            "with",
+            "area",
+            "control",
+            "where",
+            "players",
+            "take",
+            "turns",
+            "placing",
+            "1",
+            "tile",
+            "onto",
+            "the",
+            "board",
+            "(",
+            "maybe",
+            "more",
+            "with",
+            "special",
+            "tiles",
+            ")",
+            ".",
+            "if",
+            "the",
+            "token",
+            "spaces",
+            "ever",
+            "surround",
+            "by",
+            "user",
+            "played",
+            "tiles",
+            ",",
+            "for",
+            "each",
+            "icon",
+            "(",
+            "3",
+            "types",
+            ")",
+            ",",
+            "the",
+            "player",
+            "with",
+            "the",
+            "highest",
+            "sum",
+            "of",
+            "like",
+            "icon",
+            "on",
+            "surround",
+            "tiles",
+            "gains",
+            "icon",
+            ",",
+            "where",
+            "samurais",
+            "and",
+            "ships",
+            "are",
+            "wild",
+            ".",
+            "once",
+            "4",
+            "pieces",
+            "are",
+            "out",
+            "of",
+            "the",
+            "game",
+            "or",
+            "all",
+            "of",
+            "1",
+            "type",
+            "is",
+            "off",
+            "the",
+            "game",
+            "board",
+            ",",
+            "game",
+            "ends",
+            ".",
+            "winner",
+            "is",
+            "determined",
+            "by",
+            "the",
+            "player",
+            "with",
+            "the",
+            "most",
+            "majorities",
+            "of",
+            "the",
+            "3",
+            "types",
+            ",",
+            "tie",
+            "breaker",
+            "is",
+            "the",
+            "most",
+            "non",
+            "majority",
+            "pieces",
+            ",",
+            "followed",
+            "by",
+            "sum",
+            "of",
+            "most",
+            "pieces",
+            "."
+          ],
+          "tokens_no_stopwords": [
+            "tactical",
+            "tile",
+            "laying",
+            "game",
+            "area",
+            "control",
+            "players",
+            "take",
+            "turns",
+            "placing",
+            "1",
+            "tile",
+            "onto",
+            "board",
+            "maybe",
+            "special",
+            "tiles",
+            "token",
+            "spaces",
+            "ever",
+            "surround",
+            "user",
+            "played",
+            "tiles",
+            "icon",
+            "3",
+            "types",
+            "player",
+            "highest",
+            "sum",
+            "like",
+            "icon",
+            "surround",
+            "tiles",
+            "gains",
+            "icon",
+            "samurais",
+            "ships",
+            "wild",
+            "4",
+            "pieces",
+            "game",
+            "1",
+            "type",
+            "game",
+            "board",
+            "game",
+            "ends",
+            "winner",
+            "determined",
+            "player",
+            "majorities",
+            "3",
+            "types",
+            "tie",
+            "breaker",
+            "non",
+            "majority",
+            "pieces",
+            "followed",
+            "sum",
+            "pieces"
+          ],
+          "stems": [
+            "tactic",
+            "tile",
+            "lay",
+            "game",
+            "area",
+            "control",
+            "player",
+            "take",
+            "turn",
+            "place",
+            "1",
+            "tile",
+            "onto",
+            "board",
+            "mayb",
+            "special",
+            "tile",
+            "token",
+            "space",
+            "ever",
+            "surround",
+            "user",
+            "play",
+            "tile",
+            "icon",
+            "3",
+            "type",
+            "player",
+            "highest",
+            "sum",
+            "like",
+            "icon",
+            "surround",
+            "tile",
+            "gain",
+            "icon",
+            "samurai",
+            "ship",
+            "wild",
+            "4",
+            "piec",
+            "game",
+            "1",
+            "type",
+            "game",
+            "board",
+            "game",
+            "end",
+            "winner",
+            "determin",
+            "player",
+            "major",
+            "3",
+            "type",
+            "tie",
+            "breaker",
+            "non",
+            "major",
+            "piec",
+            "follow",
+            "sum",
+            "piec"
+          ],
+          "lemmas": [
+            "a",
+            "tactical",
+            "tile",
+            "lay",
+            "game",
+            "with",
+            "area",
+            "control",
+            "where",
+            "player",
+            "take",
+            "turn",
+            "place",
+            "1",
+            "tile",
+            "onto",
+            "the",
+            "board",
+            "(",
+            "maybe",
+            "more",
+            "with",
+            "special",
+            "tile",
+            ")",
+            ".",
+            "if",
+            "the",
+            "token",
+            "space",
+            "ever",
+            "surround",
+            "by",
+            "user",
+            "play",
+            "tile",
+            ",",
+            "for",
+            "each",
+            "icon",
+            "(",
+            "3",
+            "type",
+            ")",
+            ",",
+            "the",
+            "player",
+            "with",
+            "the",
+            "high",
+            "sum",
+            "of",
+            "like",
+            "icon",
+            "on",
+            "surround",
+            "tile",
+            "gain",
+            "icon",
+            ",",
+            "where",
+            "samurai",
+            "and",
+            "ship",
+            "be",
+            "wild",
+            ".",
+            "once",
+            "4",
+            "piece",
+            "be",
+            "out",
+            "of",
+            "the",
+            "game",
+            "or",
+            "all",
+            "of",
+            "1",
+            "type",
+            "be",
+            "off",
+            "the",
+            "game",
+            "board",
+            ",",
+            "game",
+            "end",
+            ".",
+            "winner",
+            "be",
+            "determine",
+            "by",
+            "the",
+            "player",
+            "with",
+            "the",
+            "most",
+            "majority",
+            "of",
+            "the",
+            "3",
+            "type",
+            ",",
+            "tie",
+            "breaker",
+            "be",
+            "the",
+            "most",
+            "non",
+            "majority",
+            "piece",
+            ",",
+            "follow",
+            "by",
+            "sum",
+            "of",
+            "most",
+            "piece",
+            "."
+          ],
+          "pos_tags": [
+            [
+              "a",
+              "DET",
+              "DT"
+            ],
+            [
+              "tactical",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "tile",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "laying",
+              "VERB",
+              "VBG"
+            ],
+            [
+              "game",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "with",
+              "ADP",
+              "IN"
+            ],
+            [
+              "area",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "control",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "where",
+              "SCONJ",
+              "WRB"
+            ],
+            [
+              "players",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "take",
+              "VERB",
+              "VBP"
+            ],
+            [
+              "turns",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "placing",
+              "VERB",
+              "VBG"
+            ],
+            [
+              "1",
+              "NUM",
+              "CD"
+            ],
+            [
+              "tile",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "onto",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "board",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "(",
+              "PUNCT",
+              "-LRB-"
+            ],
+            [
+              "maybe",
+              "ADV",
+              "RB"
+            ],
+            [
+              "more",
+              "ADJ",
+              "JJR"
+            ],
+            [
+              "with",
+              "ADP",
+              "IN"
+            ],
+            [
+              "special",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "tiles",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ")",
+              "PUNCT",
+              "-RRB-"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ],
+            [
+              "if",
+              "SCONJ",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "token",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "spaces",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "ever",
+              "ADV",
+              "RB"
+            ],
+            [
+              "surround",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "by",
+              "ADP",
+              "IN"
+            ],
+            [
+              "user",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "played",
+              "VERB",
+              "VBN"
+            ],
+            [
+              "tiles",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "for",
+              "ADP",
+              "IN"
+            ],
+            [
+              "each",
+              "DET",
+              "DT"
+            ],
+            [
+              "icon",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "(",
+              "PUNCT",
+              "-LRB-"
+            ],
+            [
+              "3",
+              "NUM",
+              "CD"
+            ],
+            [
+              "types",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ")",
+              "PUNCT",
+              "-RRB-"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "player",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "with",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "highest",
+              "ADJ",
+              "JJS"
+            ],
+            [
+              "sum",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "of",
+              "ADP",
+              "IN"
+            ],
+            [
+              "like",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "icon",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "on",
+              "ADP",
+              "IN"
+            ],
+            [
+              "surround",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              "tiles",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "gains",
+              "VERB",
+              "VBZ"
+            ],
+            [
+              "icon",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "where",
+              "SCONJ",
+              "WRB"
+            ],
+            [
+              "samurais",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "and",
+              "CCONJ",
+              "CC"
+            ],
+            [
+              "ships",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "are",
+              "AUX",
+              "VBP"
+            ],
+            [
+              "wild",
+              "ADJ",
+              "JJ"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ],
+            [
+              "once",
+              "SCONJ",
+              "IN"
+            ],
+            [
+              "4",
+              "NUM",
+              "CD"
+            ],
+            [
+              "pieces",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "are",
+              "AUX",
+              "VBP"
+            ],
+            [
+              "out",
+              "ADP",
+              "IN"
+            ],
+            [
+              "of",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "game",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "or",
+              "CCONJ",
+              "CC"
+            ],
+            [
+              "all",
+              "PRON",
+              "DT"
+            ],
+            [
+              "of",
+              "ADP",
+              "IN"
+            ],
+            [
+              "1",
+              "NUM",
+              "CD"
+            ],
+            [
+              "type",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "is",
+              "AUX",
+              "VBZ"
+            ],
+            [
+              "off",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "game",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "board",
+              "NOUN",
+              "NN"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "game",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "ends",
+              "VERB",
+              "VBZ"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ],
+            [
+              "winner",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "is",
+              "AUX",
+              "VBZ"
+            ],
+            [
+              "determined",
+              "VERB",
+              "VBN"
+            ],
+            [
+              "by",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "player",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "with",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "most",
+              "ADJ",
+              "JJS"
+            ],
+            [
+              "majorities",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              "of",
+              "ADP",
+              "IN"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "3",
+              "NUM",
+              "CD"
+            ],
+            [
+              "types",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "tie",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "breaker",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "is",
+              "AUX",
+              "VBZ"
+            ],
+            [
+              "the",
+              "DET",
+              "DT"
+            ],
+            [
+              "most",
+              "ADJ",
+              "JJS"
+            ],
+            [
+              "non",
+              "ADJ",
+              "AFX"
+            ],
+            [
+              "majority",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "pieces",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ",",
+              "PUNCT",
+              ","
+            ],
+            [
+              "followed",
+              "VERB",
+              "VBN"
+            ],
+            [
+              "by",
+              "ADP",
+              "IN"
+            ],
+            [
+              "sum",
+              "NOUN",
+              "NN"
+            ],
+            [
+              "of",
+              "ADP",
+              "IN"
+            ],
+            [
+              "most",
+              "ADJ",
+              "JJS"
+            ],
+            [
+              "pieces",
+              "NOUN",
+              "NNS"
+            ],
+            [
+              ".",
+              "PUNCT",
+              "."
+            ]
+          ],
+          "dependencies": [
+            [
+              "a",
+              "det",
+              "game"
+            ],
+            [
+              "tactical",
+              "amod",
+              "game"
+            ],
+            [
+              "tile",
+              "npadvmod",
+              "laying"
+            ],
+            [
+              "laying",
+              "amod",
+              "game"
+            ],
+            [
+              "game",
+              "ROOT",
+              "game"
+            ],
+            [
+              "with",
+              "prep",
+              "game"
+            ],
+            [
+              "area",
+              "compound",
+              "control"
+            ],
+            [
+              "control",
+              "pobj",
+              "with"
+            ],
+            [
+              "where",
+              "advmod",
+              "take"
+            ],
+            [
+              "players",
+              "nsubj",
+              "take"
+            ],
+            [
+              "take",
+              "relcl",
+              "game"
+            ],
+            [
+              "turns",
+              "dobj",
+              "take"
+            ],
+            [
+              "placing",
+              "advcl",
+              "take"
+            ],
+            [
+              "1",
+              "nummod",
+              "tile"
+            ],
+            [
+              "tile",
+              "dobj",
+              "placing"
+            ],
+            [
+              "onto",
+              "prep",
+              "placing"
+            ],
+            [
+              "the",
+              "det",
+              "board"
+            ],
+            [
+              "board",
+              "pobj",
+              "onto"
+            ],
+            [
+              "(",
+              "punct",
+              "placing"
+            ],
+            [
+              "maybe",
+              "advmod",
+              "more"
+            ],
+            [
+              "more",
+              "dobj",
+              "placing"
+            ],
+            [
+              "with",
+              "prep",
+              "more"
+            ],
+            [
+              "special",
+              "amod",
+              "tiles"
+            ],
+            [
+              "tiles",
+              "pobj",
+              "with"
+            ],
+            [
+              ")",
+              "punct",
+              "placing"
+            ],
+            [
+              ".",
+              "punct",
+              "game"
+            ],
+            [
+              "if",
+              "mark",
+              "played"
+            ],
+            [
+              "the",
+              "det",
+              "spaces"
+            ],
+            [
+              "token",
+              "amod",
+              "spaces"
+            ],
+            [
+              "spaces",
+              "nsubj",
+              "played"
+            ],
+            [
+              "ever",
+              "advmod",
+              "surround"
+            ],
+            [
+              "surround",
+              "acl",
+              "spaces"
+            ],
+            [
+              "by",
+              "agent",
+              "surround"
+            ],
+            [
+              "user",
+              "npadvmod",
+              "played"
+            ],
+            [
+              "played",
+              "advcl",
+              "gains"
+            ],
+            [
+              "tiles",
+              "dobj",
+              "played"
+            ],
+            [
+              ",",
+              "punct",
+              "gains"
+            ],
+            [
+              "for",
+              "prep",
+              "gains"
+            ],
+            [
+              "each",
+              "det",
+              "icon"
+            ],
+            [
+              "icon",
+              "pobj",
+              "for"
+            ],
+            [
+              "(",
+              "punct",
+              "icon"
+            ],
+            [
+              "3",
+              "nummod",
+              "types"
+            ],
+            [
+              "types",
+              "appos",
+              "icon"
+            ],
+            [
+              ")",
+              "punct",
+              "icon"
+            ],
+            [
+              ",",
+              "punct",
+              "gains"
+            ],
+            [
+              "the",
+              "det",
+              "player"
+            ],
+            [
+              "player",
+              "nsubj",
+              "gains"
+            ],
+            [
+              "with",
+              "prep",
+              "player"
+            ],
+            [
+              "the",
+              "det",
+              "sum"
+            ],
+            [
+              "highest",
+              "amod",
+              "sum"
+            ],
+            [
+              "sum",
+              "pobj",
+              "with"
+            ],
+            [
+              "of",
+              "prep",
+              "sum"
+            ],
+            [
+              "like",
+              "amod",
+              "icon"
+            ],
+            [
+              "icon",
+              "pobj",
+              "of"
+            ],
+            [
+              "on",
+              "prep",
+              "sum"
+            ],
+            [
+              "surround",
+              "amod",
+              "tiles"
+            ],
+            [
+              "tiles",
+              "pobj",
+              "on"
+            ],
+            [
+              "gains",
+              "ROOT",
+              "gains"
+            ],
+            [
+              "icon",
+              "dobj",
+              "gains"
+            ],
+            [
+              ",",
+              "punct",
+              "icon"
+            ],
+            [
+              "where",
+              "advmod",
+              "are"
+            ],
+            [
+              "samurais",
+              "nsubj",
+              "are"
+            ],
+            [
+              "and",
+              "cc",
+              "samurais"
+            ],
+            [
+              "ships",
+              "conj",
+              "samurais"
+            ],
+            [
+              "are",
+              "relcl",
+              "icon"
+            ],
+            [
+              "wild",
+              "acomp",
+              "are"
+            ],
+            [
+              ".",
+              "punct",
+              "gains"
+            ],
+            [
+              "once",
+              "mark",
+              "are"
+            ],
+            [
+              "4",
+              "nummod",
+              "pieces"
+            ],
+            [
+              "pieces",
+              "nsubj",
+              "are"
+            ],
+            [
+              "are",
+              "advcl",
+              "ends"
+            ],
+            [
+              "out",
+              "prep",
+              "are"
+            ],
+            [
+              "of",
+              "prep",
+              "out"
+            ],
+            [
+              "the",
+              "det",
+              "game"
+            ],
+            [
+              "game",
+              "pobj",
+              "of"
+            ],
+            [
+              "or",
+              "cc",
+              "are"
+            ],
+            [
+              "all",
+              "nsubj",
+              "is"
+            ],
+            [
+              "of",
+              "prep",
+              "all"
+            ],
+            [
+              "1",
+              "nummod",
+              "type"
+            ],
+            [
+              "type",
+              "pobj",
+              "of"
+            ],
+            [
+              "is",
+              "conj",
+              "are"
+            ],
+            [
+              "off",
+              "prep",
+              "is"
+            ],
+            [
+              "the",
+              "det",
+              "board"
+            ],
+            [
+              "game",
+              "compound",
+              "board"
+            ],
+            [
+              "board",
+              "pobj",
+              "off"
+            ],
+            [
+              ",",
+              "punct",
+              "ends"
+            ],
+            [
+              "game",
+              "nsubj",
+              "ends"
+            ],
+            [
+              "ends",
+              "ROOT",
+              "ends"
+            ],
+            [
+              ".",
+              "punct",
+              "ends"
+            ],
+            [
+              "winner",
+              "nsubjpass",
+              "determined"
+            ],
+            [
+              "is",
+              "auxpass",
+              "determined"
+            ],
+            [
+              "determined",
+              "ccomp",
+              "is"
+            ],
+            [
+              "by",
+              "agent",
+              "determined"
+            ],
+            [
+              "the",
+              "det",
+              "player"
+            ],
+            [
+              "player",
+              "pobj",
+              "by"
+            ],
+            [
+              "with",
+              "prep",
+              "player"
+            ],
+            [
+              "the",
+              "det",
+              "majorities"
+            ],
+            [
+              "most",
+              "amod",
+              "majorities"
+            ],
+            [
+              "majorities",
+              "pobj",
+              "with"
+            ],
+            [
+              "of",
+              "prep",
+              "majorities"
+            ],
+            [
+              "the",
+              "det",
+              "types"
+            ],
+            [
+              "3",
+              "nummod",
+              "types"
+            ],
+            [
+              "types",
+              "pobj",
+              "of"
+            ],
+            [
+              ",",
+              "punct",
+              "is"
+            ],
+            [
+              "tie",
+              "compound",
+              "breaker"
+            ],
+            [
+              "breaker",
+              "nsubj",
+              "is"
+            ],
+            [
+              "is",
+              "ROOT",
+              "is"
+            ],
+            [
+              "the",
+              "det",
+              "pieces"
+            ],
+            [
+              "most",
+              "amod",
+              "pieces"
+            ],
+            [
+              "non",
+              "nmod",
+              "majority"
+            ],
+            [
+              "majority",
+              "nmod",
+              "pieces"
+            ],
+            [
+              "pieces",
+              "attr",
+              "is"
+            ],
+            [
+              ",",
+              "punct",
+              "is"
+            ],
+            [
+              "followed",
+              "advcl",
+              "is"
+            ],
+            [
+              "by",
+              "agent",
+              "followed"
+            ],
+            [
+              "sum",
+              "pobj",
+              "by"
+            ],
+            [
+              "of",
+              "prep",
+              "sum"
+            ],
+            [
+              "most",
+              "amod",
+              "pieces"
+            ],
+            [
+              "pieces",
+              "pobj",
+              "of"
+            ],
+            [
+              ".",
+              "punct",
+              "is"
+            ]
+          ],
+          "entities": [
+            [
+              "1",
+              "CARDINAL"
+            ],
+            [
+              "3",
+              "CARDINAL"
+            ],
+            [
+              "4",
+              "CARDINAL"
+            ],
+            [
+              "1",
+              "CARDINAL"
+            ],
+            [
+              "3",
+              "CARDINAL"
+            ]
+          ]
+        },
+        "linguistic_features": {
+          "sentiment.pos_count": 3,
+          "sentiment.neg_count": 1,
+          "sentiment.total": 4,
+          "sentiment.pos_ratio": 0.75,
+          "vader.compound": 0.938,
+          "vader.pos": 0.148,
+          "vader.neu": 0.852,
+          "vader.neg": 0.0,
+          "syntactic.num_tokens_no_stop": 62,
+          "syntactic.avg_token_no_stop_length": 5.048387096774194,
+          "syntactic.avg_dep_depth": 0,
+          "syntactic.num_dependencies": 0,
+          "sentence.num_sentences": 4,
+          "sentence.avg_sentiment": 0.48324999999999996,
+          "sentence.sentiment_variance": 0.0913081925,
+          "hedge.count": 2,
+          "hedge.count_type.hedge_words": 1,
+          "hedge.count_type.propositional": 1,
+          "hedge.count_type.relational": 1,
+          "hedge.count_type.discourse_markers": 0,
+          "hedge.density": 0.03225806451612903,
+          "hedge.nearby_sentiment_count": 1,
+          "hedge.nearby_sentiment_ratio": 0.25,
+          "hedge.prop_propositional": 0.5,
+          "hedge.prop_relational": 0.5,
+          "hedge.prop_discourse": 0.0,
+          "hedge.words=maybe": 1,
+          "hedge.propositional=like": 1,
+          "hedge.relational=maybe": 1,
+          "hedge.all=maybe": 1,
+          "hedge.all=like": 1,
+          "hedge.nearby_sentiment_words=like": 1,
+          "domain.components=board": 2,
+          "lexicon.pos_word=like": 1,
+          "lexicon.pos_word=gains": 1,
+          "lexicon.pos_word=winner": 1,
+          "lexicon.neg_word=wild": 1
         },
         "patterns": {
           "emails": [],
