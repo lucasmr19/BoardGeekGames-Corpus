@@ -1,6 +1,6 @@
-# 🧩 BoardGeekGames Corpus
+# 🧩 BoardGameGeek Corpus
 
-**BoardGeekGames Corpus** is a Python project for building and analyzing an annotated textual corpus of **board game reviews**.  
+**BoardGameGeek Corpus** is a Python project for building and analyzing an annotated textual corpus of **board game reviews**.  
 It focuses on sentiment analysis, linguistic annotation, and lexicon-based modeling from user-generated content gathered from [BoardGameGeek](https://boardgamegeek.com).
 
 ## 🚀 Overview
@@ -19,7 +19,7 @@ For more details on the core corpus creation pipeline, see the **[bgg_corpus REA
 
 ```
 
-BoardGeekGames-Corpus/
+BoardGameGeek-Corpus/
 ├── README.md
 ├── requirements.txt
 ├── data/
@@ -49,8 +49,8 @@ BoardGeekGames-Corpus/
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/lucasmr19/BoardGeekGames-Corpus.git
-cd BoardGeekGames-Corpus
+git clone https://github.com/lucasmr19/BoardGameGeek-Corpus.git
+cd BoardGameGeek-Corpus
 pip install -r requirements.txt
 ````
 
