@@ -1,8 +1,3 @@
-Here’s the **complete, polished `README.md`**, fully updated to match the actual implementation of `build_corpus()` and include the embedded workflow diagram:
-
----
-
-````markdown
 # BoardGameGeek Corpus creation (`bgg_corpus`)
 
 This project builds a **structured corpus of BoardGameGeek (BGG) reviews**, integrating both metadata and user reviews from **crawler and API sources**, with support for **review preprocessing, balancing, and corpus assembly**.
@@ -11,160 +6,156 @@ This project builds a **structured corpus of BoardGameGeek (BGG) reviews**, inte
 
 ## 1. Full Pipeline Overview
 
-<p align="center">
-  <img src="/BoardGeekGames-Corpus/docs/bgg_corpus_workflow.svg" alt="BoardGameGeek Corpus Workflow" width="100%">
-</p>
+Created with mermaid code:
 
 ```mermaid
-%%{init: {'theme':'neutral','themeVariables':{ 'fontSize':'13px','nodeTextColor':'#333','primaryColor':'#e3eaf2','edgeLabelBackground':'#fff'}}}%%
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#e3f2fd','primaryTextColor':'#000','primaryBorderColor':'#1976d2','lineColor':'#666','secondaryColor':'#fff3e0','tertiaryColor':'#e8f5e9'}}}%%
 flowchart TD
-    %% STYLE CLASSES
-    classDef dataSource fill:#d9e8ff,stroke:#003366,stroke-width:1px,color:#000,font-weight:bold
-    classDef ingestion fill:#b8d8ff,stroke:#004c99,stroke-width:1px,color:#000
-    classDef preprocessing fill:#c7f0c0,stroke:#1d632f,stroke-width:1px,color:#000
-    classDef feature fill:#a8f0f8,stroke:#007c91,stroke-width:1px,color:#000
-    classDef balancing fill:#ffd8a8,stroke:#b85c00,stroke-width:1px,color:#000
-    classDef model fill:#e2c4ff,stroke:#6030b0,stroke-width:1px,color:#000
-    classDef util fill:#d9d9d9,stroke:#666,stroke-width:1px,color:#000
-    classDef storage fill:#e3b7eb,stroke:#803080,stroke-width:1px,color:#000
-    classDef analysis fill:#cccccc,stroke:#333,stroke-width:1px,color:#000
+    %% Enhanced Styles
+    classDef phaseBox fill:#f3f6ff,stroke:#1976d2,stroke-width:2px,color:#000,font-weight:700;
+    classDef action fill:#ffffff,stroke:#666,stroke-width:1.5px,color:#000,rx:5,ry:5;
+    classDef data fill:#e3f2fd,stroke:#1976d2,stroke-width:1.5px,color:#000,shape:cylinder;
+    classDef decision fill:#fff9c4,stroke:#f57c00,stroke-width:2px,color:#000,font-weight:700;
+    classDef parallel fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000;
+    classDef util fill:#fff3e0,stroke:#e65100,stroke-width:1.5px,color:#000;
+    classDef endpoint fill:#e1bee7,stroke:#6a1b9a,stroke-width:2px,color:#000,font-weight:700;
 
-    %% DATA SOURCES
-    subgraph "Data Sources"
-        API["BGG API JSON"]:::dataSource
-        CRAWLER["BGG Crawler JSON"]:::dataSource
-        RAWCSV["Boardgames Ranks CSV"]:::dataSource
-        LEX["Lexicon Files"]:::dataSource
+    %% START
+    START(["🎮 build_corpus(game_ids, source, balance_strategy, ...)"]):::endpoint
+
+    START --> PHASE1
+
+    %% ═══════════════════════════════════════════════════════════
+    %% PHASE 1: Collection & Balancing
+    %% ═══════════════════════════════════════════════════════════
+    subgraph PHASE1[" 📥 PHASE 1: Collection & Balancing "]
+        direction TB
+        
+        M1["🔄 merge_reviews(game_ids, source)<br/><i>Merge API + Crawler data</i>"]:::util
+        
+        CB1["⚖️ collect_balanced_reviews_multi_game()<br/>• Apply balance_strategy (over/under/hybrid)<br/>• min_samples per rating<br/>• Optional augmentation"]:::action
+        
+        SR1["📊 save_balance_report(stats)<br/><i>Store balancing statistics</i>"]:::action
+        
+        DATA1[("📦 collected_reviews<br/>(list of standardized review dicts)")]:::data
+        
+        M1 --> CB1
+        CB1 -->|"reviews + stats"| DATA1
+        CB1 -->|"stats"| SR1
+        SR1 -.->|"report saved"| DATA1
     end
 
-    %% INGESTION LAYER
-    subgraph "Ingestion Layer"
-        API_D["API Downloader"]:::ingestion
-        CRAWLER_D["Crawler Downloader"]:::ingestion
-        NLTK_DL["NLTK Resource Downloader"]:::ingestion
+    %% ═══════════════════════════════════════════════════════════
+    %% PHASE 2: Grouping & Preparation
+    %% ═══════════════════════════════════════════════════════════
+    subgraph PHASE2[" 🗂️ PHASE 2: Group & Prepare "]
+        direction TB
+        
+        EO2["🔧 ensure_review_obj(r, gid)<br/><i>Standardize review format</i>"]:::util
+        
+        GB2["📋 Group by game_id<br/><i>defaultdict(list)</i>"]:::action
+        
+        DATA2[("🎲 game_groups<br/>{game_id: [reviews]}")]:::data
+        
+        EO2 --> GB2
+        GB2 --> DATA2
     end
 
-    %% PREPROCESSING LAYER
-    subgraph "Preprocessing Layer"
-        CLEAN["Cleaning"]:::preprocessing
-        LANG_DET["Language Detection"]:::preprocessing
-        SEGMENT["Tokenization / Segmentation"]:::preprocessing
-        STEM["Stemming"]:::preprocessing
-        REGISTRY["Tokenizer Registry"]:::preprocessing
-        REVIEW_PROC["Review Processor"]:::preprocessing
-        SPACY_UTILS["spaCy Utilities"]:::preprocessing
-        SPACY_ANAL["spaCy-based Analysis"]:::preprocessing
+    DATA1 --> EO2
+
+    %% ═══════════════════════════════════════════════════════════
+    %% PHASE 3: Per-Game Processing
+    %% ═══════════════════════════════════════════════════════════
+    subgraph PHASE3[" 🔄 PHASE 3: Per-Game Processing (loop over game_ids) "]
+        direction TB
+        
+        LOOP3["🔁 For each (game_id, reviews)"]:::phaseBox
+        
+        BM3["📊 build_metadata(game_id)<br/><i>Fetch game metadata</i>"]:::util
+        
+        IGC3["🎮 GameCorpus(game_id, metadata, documents=[])"]:::action
+        
+        DEC3{"🤔 Use parallel processing?<br/>(parallel=True & reviews>0)"}:::decision
+        
+        %% Parallel Branch
+        subgraph PARALLEL[" ⚡ Parallel Processing "]
+            direction TB
+            PP3["🔀 ProcessPoolExecutor(max_workers)"]:::parallel
+            SUB3["📤 Submit: process_single_review(review)<br/><i>for each review</i>"]:::parallel
+            AC3["📥 as_completed(futures)<br/><i>Collect results</i>"]:::parallel
+            ADD3P["➕ Add CorpusDocument to GameCorpus<br/><i>Set fileid, game_id</i>"]:::parallel
+            
+            PP3 --> SUB3 --> AC3 --> ADD3P
+        end
+        
+        %% Sequential Branch
+        subgraph SEQUENTIAL[" 🔄 Sequential Processing "]
+            direction TB
+            SEQ3["🔁 for review in reviews:<br/>process_single_review(review)"]:::action
+            ADD3S["➕ Add CorpusDocument to GameCorpus<br/><i>Set fileid, game_id</i>"]:::action
+            
+            SEQ3 --> ADD3S
+        end
+        
+        APPEND3["📝 games.append(game_corpus)"]:::action
+        
+        LOOP3 --> BM3 --> IGC3 --> DEC3
+        DEC3 -->|"Yes"| PARALLEL
+        DEC3 -->|"No"| SEQUENTIAL
+        ADD3P --> APPEND3
+        ADD3S --> APPEND3
     end
 
-    %% FEATURE EXTRACTION
-    subgraph "Feature Extraction"
-        LEX_LOADER["Lexicon Loader"]:::feature
-        LING_FEAT["Linguistic Feature Extractor"]:::feature
-        VECT["Vectorization"]:::feature
+    DATA2 --> LOOP3
+    
+    %% ═══════════════════════════════════════════════════════════
+    %% PHASE 4: Assembly & Return
+    %% ═══════════════════════════════════════════════════════════
+    subgraph PHASE4[" 📚 PHASE 4: Corpus Assembly & Return "]
+        direction TB
+        
+        TOTAL4["🧮 Compute totals<br/><i>Games processed, documents count</i>"]:::action
+        
+        DATA4A[("🎲 games<br/>[GameCorpus objects]")]:::data
+        
+        FC4["🗄️ Corpus(games=games)"]:::action
+        
+        DATA4B[("📊 stats<br/>(balancing statistics)")]:::data
+        
+        SUM4["📋 Print summary<br/>• Games processed<br/>• Total documents"]:::action
+        
+        TOTAL4 --> DATA4A
+        DATA4A --> FC4
+        FC4 --> SUM4
+        DATA4B -.-> SUM4
     end
 
-    %% BALANCING & LABELING
-    subgraph "Balancing & Labeling"
-        SINGLE_BAL["Single-game Balancing"]:::balancing
-        MULTI_BAL["Multi-game Balancing"]:::balancing
-        AUG["Data Augmentation"]:::balancing
-        HELPERS["Balancing Helpers"]:::balancing
-        SAVE_BAL["Save Balance Report"]:::balancing
+    APPEND3 -.->|"after loop"| TOTAL4
+    
+    %% FINAL RETURN
+    RETURN(["✅ Return (Corpus, stats)"]):::endpoint
+    SUM4 --> RETURN
+
+    %% ═══════════════════════════════════════════════════════════
+    %% Legend
+    %% ═══════════════════════════════════════════════════════════
+    subgraph LEGEND[" 🏷️ LEGEND "]
+        direction LR
+        L1["⚙️ Action/Process"]:::action
+        L2["📦 Data/Object"]:::data
+        L3["❓ Decision Point"]:::decision
+        L4["⚡ Parallel Pool"]:::parallel
+        L5["🔧 Utility Function"]:::util
     end
 
-    %% CORPUS & MODELS
-    subgraph "Corpus & Model Abstractions"
-        CORPUS["Corpus Model"]:::model
-        GAME_CORPUS["GameCorpus"]:::model
-        REVIEW_DOC["Review"]:::model
-        CORPUS_DOC["CorpusDocument"]:::model
-        CLI["CLI Entrypoint"]:::model
-        CONFIG["Config Definitions"]:::model
-    end
-
-    %% UTILITIES & RESOURCES
-    subgraph "Utilities & Resources"
-        UTIL_CB["Corpus Builder"]:::util
-        UTIL_IO["I/O Helpers"]:::util
-        UTIL_META["Metadata Utils"]:::util
-        UTIL_PROC["Processing Utils"]:::util
-        UTIL_REV["Review Utils"]:::util
-        RESOURCES["Packaged Resources"]:::util
-    end
-
-    %% STORAGE / PERSISTENCE
-    subgraph "Storage / Persistence"
-        MONGO["MongoDB Backend"]:::storage
-        JSON_CORP["JSON Corpora Export"]:::storage
-        DATASETS["Train/Val/Test Datasets"]:::storage
-        VECT_EXPORT["Vector & Vectorizer Exports"]:::storage
-    end
-
-    %% ANALYSIS / DOWNSTREAM
-    subgraph "Analysis / Downstream"
-        NOTEBOOKS["Jupyter Notebooks"]:::analysis
-        SCRIPTS["Analysis Scripts"]:::analysis
-    end
-
-    %% MAIN DATA FLOW
-    API -->|JSON| API_D
-    CRAWLER -->|JSON| CRAWLER_D
-    RAWCSV -->|CSV| API_D
-    API_D --> CLEAN
-    CRAWLER_D --> CLEAN
-    NLTK_DL --> CLEAN
-    CLEAN --> LANG_DET --> SEGMENT --> STEM --> REGISTRY --> REVIEW_PROC --> SPACY_UTILS --> SPACY_ANAL
-    SPACY_ANAL --> LEX_LOADER --> LING_FEAT --> VECT
-    LEX --> LEX_LOADER
-    LEX --> CLEAN
-    VECT --> SINGLE_BAL --> MULTI_BAL --> AUG --> HELPERS --> SAVE_BAL
-    SAVE_BAL --> CORPUS_DOC --> REVIEW_DOC --> GAME_CORPUS --> CORPUS
-    CORPUS --> UTIL_CB
-    UTIL_CB --> CLI
-    CONFIG --> CLI
-    CLI --> JSON_CORP
-    CLI --> MONGO
-    JSON_CORP --> DATASETS --> VECT_EXPORT
-    MONGO --> NOTEBOOKS
-    MONGO --> SCRIPTS
-    VECT_EXPORT --> NOTEBOOKS
-    VECT_EXPORT --> SCRIPTS
-
-    %% CLICKABLE LINKS (optional for GitHub Markdown)
-    click API "data/api/"
-    click CRAWLER "data/crawler/"
-    click RAWCSV "data/raw/boardgames_ranks.csv"
-    click LEX "data/lexicons/"
-    click API_D "src/bgg_corpus/downloaders/bgg_api.py"
-    click CRAWLER_D "src/bgg_corpus/downloaders/bgg_crawler.py"
-    click CLEAN "src/bgg_corpus/preprocessing/cleaning.py"
-    click LANG_DET "src/bgg_corpus/preprocessing/language/detection.py"
-    click SPACY_UTILS "src/bgg_corpus/preprocessing/language/spacy_utils.py"
-    click SEGMENT "src/bgg_corpus/preprocessing/tokenization/segmentation.py"
-    click STEM "src/bgg_corpus/preprocessing/tokenization/stemming.py"
-    click REGISTRY "src/bgg_corpus/preprocessing/tokenization/tokenizers_registry.py"
-    click REVIEW_PROC "src/bgg_corpus/preprocessing/review_processor.py"
-    click SPACY_ANAL "src/bgg_corpus/preprocessing/spacy_analysis.py"
-    click LEX_LOADER "src/bgg_corpus/features/lexicons.py"
-    click LING_FEAT "src/bgg_corpus/features/linguistic_extractor.py"
-    click VECT "src/bgg_corpus/features/vectorization.py"
-    click SINGLE_BAL "src/bgg_corpus/balancing/single_game_balance.py"
-    click MULTI_BAL "src/bgg_corpus/balancing/multi_game_balance.py"
-    click AUG "src/bgg_corpus/balancing/augmentation.py"
-    click HELPERS "src/bgg_corpus/balancing/helpers.py"
-    click SAVE_BAL "src/bgg_corpus/balancing/save_balance.py"
-    click CORPUS "src/bgg_corpus/models/corpus.py"
-    click GAME_CORPUS "src/bgg_corpus/models/game_corpus.py"
-    click REVIEW_DOC "src/bgg_corpus/models/review.py"
-    click CORPUS_DOC "src/bgg_corpus/models/corpus_document.py"
-    click CLI "src/bgg_corpus/cli.py"
-    click CONFIG "src/bgg_corpus/config.py"
-    click MONGO "src/bgg_corpus/storage/mongodb_storage.py"
-    click JSON_CORP "data/processed/corpora/"
-    click DATASETS "data/processed/datasets/"
-    click VECT_EXPORT "data/processed/vectors/"
-    click NOTEBOOKS "notebooks/"
-    click SCRIPTS "scripts/"
+    %% Global Styles
+    style PHASE1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2.5px,rx:10,ry:10
+    style PHASE2 fill:#fff3e0,stroke:#e65100,stroke-width:2.5px,rx:10,ry:10
+    style PHASE3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2.5px,rx:10,ry:10
+    style PHASE4 fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2.5px,rx:10,ry:10
+    style PARALLEL fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px,stroke-dasharray:5,rx:8,ry:8
+    style SEQUENTIAL fill:#ffecb3,stroke:#e65100,stroke-width:2px,stroke-dasharray:5,rx:8,ry:8
+    style LEGEND fill:#fafafa,stroke:#666,stroke-width:1px,rx:5,ry:5
 ```
 
 ---
@@ -207,7 +198,6 @@ python cli.py --games 50 51 52 --balance-strategy hybrid --use-augmentation
 # Use API-only reviews and disable parallel processing
 python cli.py --games 50 51 52 --source api --no-parallel
 ```
-````
 
 **Key Options:**
 
@@ -299,3 +289,4 @@ print(f"Total reviews processed: {sum(len(g.documents) for g in corpus.games)}")
 - **Preprocessing** → Ensures consistent, clean review text for analysis.
 - **Balancing** → Addresses skewed rating distributions (e.g., few 1s or 10s, many 6s–7s).
 - **Parallelism** → Accelerates review processing for large datasets.
+
