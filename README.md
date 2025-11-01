@@ -3,8 +3,6 @@
 **BoardGeekGames Corpus** is a Python project for building and analyzing an annotated textual corpus of **board game reviews**.  
 It focuses on sentiment analysis, linguistic annotation, and lexicon-based modeling from user-generated content gathered from [BoardGameGeek](https://boardgamegeek.com).
 
----
-
 ## 🚀 Overview
 
 This project automates the **collection, processing, and annotation** of board game reviews to create a reusable **linguistic corpus** for NLP and sentiment classification tasks.
@@ -16,8 +14,6 @@ This project automates the **collection, processing, and annotation** of board g
 - **Vectorization and modeling**: TF-IDF, opinion features, and classifiers.
 
 For more details on the core corpus creation pipeline, see the **[bgg_corpus README](./src/bgg_corpus/README.md)**.
-
----
 
 ## 📁 Project Structure
 
@@ -48,8 +44,6 @@ BoardGeekGames-Corpus/
 
 ````
 
----
-
 ## ⚙️ Installation
 
 Clone the repository and install dependencies:
@@ -60,16 +54,12 @@ cd BoardGeekGames-Corpus
 pip install -r requirements.txt
 ````
 
----
-
 ## 🧠 Project Goals
 
 * Build a **domain-specific sentiment corpus** for board game reviews.
 * Extract and annotate **linguistic and lexical features** for NLP.
 * Provide structured datasets for **sentiment classification**.
 * Offer an extensible framework for **feature engineering** and **corpus analysis**.
-
----
 
 ## 🛠 Scripts and Their Functionality
 
@@ -144,8 +134,6 @@ pip install -r requirements.txt
        --output_dir path/to/results
    ```
 
----
-
 ## 📌 Key Notes
 
 * The **core corpus pipeline** is in [`src/bgg_corpus/utilities/corpus_builder.py`](./src/bgg_corpus/utilities/corpus_builder.py).
@@ -153,12 +141,5 @@ pip install -r requirements.txt
 * The scripts leverage the corpus and extracted features but **do not repeat preprocessing**.
 * Corpus supports **multi-language preprocessing**, **balancing**, and **parallel processing** for scalability.
 
----
-
-## 🔗 References
-
-* **Core Corpus Package:** [`src/bgg_corpus/README.md`](./src/bgg_corpus/README.md)
-* **Requirements:** [`requirements.txt`](./requirements.txt)
-* **Scripts:** Located in `scripts/` folder.
-* **Data:** Stored in `data/` folder.
-* **Tests:** Located in `tests/`.
+## License
+This project is licensed under the [MIT License](LICENSE).
