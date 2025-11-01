@@ -131,33 +131,71 @@ downloaders/
 
 Both methods complement each other and can be combined depending on the **dataset size, filtering needs, and balancing requirements**.
 
----
+## 🔍 Further Discussion: Recommendation to Build a Balanced Corpus with Maximum Information
 
-## 🔍 Further Discussion: Using Both Downloaders Together
+To construct a **rich and fully balanced BGG corpus**, we recommend running both downloaders in a coordinated workflow:
 
-To build a **complete and consistent BGG corpus**, you should **run both downloaders** in sequence:
+1. **Crawler (`bgg_crawler.py`)**
 
-| Downloader                               | Purpose                                                                       | Essential Outputs                                                                                                                                                                   |
-| :--------------------------------------- | :---------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🕷️ `bgg_crawler.py`                     | Collects **review-level data** (ratings, comments, timestamps, balance stats) | Generates detailed per-rating stats such as:<br>`total_all`, `total_commented`, `total_rated`, `total_rated_and_commented`, `avgweight`, `numweights`, `poll_avg`, and `poll_votes` |
-| 🌐 `bgg_api.py` (with `--mode metadata`) | Collects **game-level metadata**                                              | Provides structured data for game IDs, categories, designers, mechanics, and publication info                                                                                       |
+   - Use the flags:
 
-**Recommendation to build a balanced Corpus with the maximum information as possible:**
+     ```bash
+     --save both --mode balanced
+     ```
 
-* For **full corpus preparation**, run the crawler with `--save both mode --balanced`so you have both reviews and stats with balanced reviews per ratings.
-* API outputs are always saved as `.json` with metadata.
-* Both outputs are then merged and standardized in **Phase 1** of the `build_corpus()` pipeline, as described in the [main README](../README.md#⚙️-data-preparation).
+   - This ensures that:
 
-Each downloader saves its `.json` files automatically under:
+     - **All raw reviews** are saved to JSON files.
+     - **Aggregated statistics** for each game are generated.
+     - **Balanced review extraction per rating** is applied, so extreme ratings (1–2, 9–10) are proportionally represented alongside common ratings (5–6, 6–7).
+     - Timestamps, comment flags, and other review-level details are retained.
 
-| Path                 | Contents                     |
-| :------------------- | :--------------------------- |
-| `../../data/crawler` | Raw review data from crawler |
-| `../../data/api`     | Metadata and/or API reviews  |
+   - **Purpose:** Provides the **core dataset for preprocessing and balancing**, allowing accurate oversampling/undersampling strategies later in Phase 1 of `build_corpus()`.
 
-Running both ensures that:
+2. **API (`bgg_api.py`)**
 
-* The **crawler output** feeds detailed review-level information to the balancing phase.
-* The **API metadata** enriches each `GameCorpus` with descriptive fields for downstream NLP or analytical tasks.
+   - Run with:
+
+     ```bash
+     --mode metadata
+     ```
+
+   - This ensures that:
+
+     - Full **game-level metadata** is retrieved (categories, designers, mechanics, publication info).
+     - Fast and structured extraction for all requested game IDs.
+     - Metadata can later be merged with review-level data to enrich `GameCorpus` objects.
+
+3. **Merging and Standardization**
+
+   - Both outputs are **merged and standardized in Phase 1** of the `build_corpus()` workflow.
+   - Ensures consistency of IDs, review formats, and metadata fields before any preprocessing, balancing, or text processing is applied.
+   - Guarantees that the final corpus includes:
+
+     - Balanced representation of review ratings.
+     - Complete game metadata.
+     - All essential stats for quality control and downstream analysis.
+
+4. **Output Locations**
+
+   Each downloader saves its `.json` files automatically:
+
+   | Path                 | Contents                     |
+   | :------------------- | :--------------------------- |
+   | `../../data/crawler` | Raw review data + statistics |
+   | `../../data/api`     | Metadata and/or API reviews  |
+
+5. **Benefits of Using Both Downloaders Together**
+
+   - The **crawler output** feeds detailed review-level information into the balancing phase.
+   - The **API output** enriches each `GameCorpus` with descriptive fields for NLP, analytics, or machine learning tasks.
+   - Using both ensures the **maximum information** is captured, producing a corpus that is:
+
+     - **Balanced** across ratings.
+     - **Rich in metadata**.
+     - **Ready for preprocessing, feature extraction, and downstream tasks**.
+
+> ⚠️ **Best Practice:** Always run the crawler first to obtain balanced reviews and stats, then run the API for metadata. Do not skip either step if your goal is a fully informative corpus.
 
 [⬅ Back to main README](../README.md)
+
