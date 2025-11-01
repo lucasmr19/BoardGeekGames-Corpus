@@ -1,12 +1,135 @@
 # BoardGameGeek Corpus creation (`bgg_corpus`)
 
-This project builds a **structured corpus of BoardGameGeek (BGG) reviews**, integrating both metadata and user reviews from **crawler and API sources**, with support for **review preprocessing, balancing, and corpus assembly**.
+Here we build the **structured corpus of BoardGameGeek (BGG) reviews**, integrating both metadata and user reviews from **crawler and API sources**, with support for **review preprocessing, balancing, and corpus assembly**.
 
----
+## ⚙️ Data Preparation
 
-## 1. Full Pipeline Overview
+Before running the CLI to build the corpus, **you must first download the raw review data** using the provided downloaders.
 
-Created with mermaid code:
+### 1. Run the Downloaders Separately
+
+The downloaders are designed to be **executed independently** from `cli.py`, ensuring that raw data is collected and stored before preprocessing or corpus construction begins.
+
+You can run either or both:
+
+```bash
+# Fetch BGG reviews and metadata via crawler
+python downloaders/bgg_crawler.py
+
+# Fetch BGG reviews and metadata via API
+python downloaders/bgg_api.py
+````
+
+Each downloader will automatically save its outputs in the following directories according to the specifications in `config.py`:
+
+| Source      | Path                                                       | Format  |
+| :---------- | :--------------------------------------------------------- | :------ |
+| 🕷️ Crawler | [`BoardGeekGames-Corpus/data/crawler`](../../data/crawler) | `.json` |
+| 🌐 API      | [`BoardGeekGames-Corpus/data/api`](../../data/api)         | `.json` |
+
+> ⚠️ **Note:**
+> The `.json` files produced here are later **merged and standardized** during corpus construction.
+> Ensure that both directories contain the required data before proceeding.
+>
+> It is **mandatory** to:
+>
+> * Run **`bgg_crawler.py`** to collect review statistics such as
+>   `total_all`, `total_commented`, `total_rated`, `total_rated_and_commented`, `avgweight`, `numweights`, `poll_avg`, and `poll_votes`.
+> * Run **`bgg_api.py`** with the `--mode metadata` flag to retrieve full **game metadata**.
+>
+> For further details on the configuration, modes, and output formats, see the [**Downloaders README**](./downloaders/README.md).
+
+Once this data is collected, you can proceed with the **CLI pipeline** (below) to build the full corpus.
+
+## 1. Pipeline Summary
+
+1. **Downloaders:** Extract raw reviews and metadata using the **crawler** or **API** (run separately).
+2. **Utilities:** Merge reviews, load metadata, standardize text, and build corpus objects.
+3. **Balancing:** Apply oversampling, undersampling, or hybrid strategies to handle rating imbalance.
+4. **Preprocessing:** Clean, normalize, and label review text via `process_single_review()`.
+5. **Corpus Assembly:** Construct hierarchical corpus objects ready for downstream analysis.
+
+## 2. Modules Overview
+
+| Module                                         | Purpose                                                      | Documentation                     |
+| :--------------------------------------------- | :----------------------------------------------------------- | :-------------------------------- |
+| **[downloaders](./downloaders/README.md)**     | Fetch reviews and metadata from BGG (crawler/API).           | [docs](./downloaders/README.md)   |
+| **[utilities](./utilities/README.md)**         | Load/merge reviews, build metadata, and assemble corpus.     | [docs](./utilities/README.md)     |
+| **[preprocessing](./preprocessing/README.md)** | Clean and normalize review text.                             | [docs](./preprocessing/README.md) |
+| **[balancing](./balancing/README.md)**         | Balance review distribution by ratings.                      | [docs](./balancing/README.md)     |
+| **[models](./models/README.md)**               | Define `Corpus`, `GameCorpus`, and `CorpusDocument` classes. | [docs](./models/README.md)        |
+| **[features](./features/README.md)**           | Handle linguistic and vector representations.                | [docs](./features/README.md)      |
+| **[storage](./storage/README.md)**             | Save and load corpora from MongoDB or disk.                  | [docs](./storage/README.md)       |
+
+## 3. CLI Usage (`cli.py`)
+
+Once the raw `.json` data is available in the `data/` folders, you can build the corpus using:
+
+```bash
+# Build corpus for games 50, 51, 52 with default settings
+python cli.py --games 50 51 52 --save-json --generate-stats
+
+# Build corpus using hybrid balance, enable augmentation
+python cli.py --games 50 51 52 --balance-strategy hybrid --use-augmentation
+
+# Use API-only reviews and disable parallel processing
+python cli.py --games 50 51 52 --source api --no-parallel
+```
+
+**Key Options:**
+
+| Option                         | Description                                           |
+| :----------------------------- | :---------------------------------------------------- |
+| `--games`                      | List of BGG game IDs                                  |
+| `--source`                     | `"crawler"`, `"api"`, or `"combined"`                 |
+| `--balance-strategy`           | `"oversample"`, `"undersample"`, `"hybrid"`           |
+| `--use-augmentation`           | Enable text augmentation for underrepresented ratings |
+| `--save-json` / `--save-mongo` | Save corpus as JSON or MongoDB                        |
+| `--generate-stats`             | Print corpus and balancing statistics (post_creation) |
+
+## 4. Corpus Building Workflow
+
+The `build_corpus()` function constructs the complete BGG review corpus in **four main phases**:
+
+### **Phase 1 — Review Collection & Balancing**
+
+* Merge API and crawler reviews with `merge_reviews()`.
+* Apply `collect_balanced_reviews_multi_game()` to handle rating imbalances (oversample / undersample / hybrid).
+* Optionally perform text augmentation.
+* Save balancing reports via `save_balance_report()`.
+
+### **Phase 2 — Grouping & Preparation**
+
+* Standardize each review object with `ensure_review_obj()`.
+* Group reviews by `game_id` into a structured dictionary for processing.
+
+### **Phase 3 — Per-Game Processing**
+
+* For each game:
+
+  * Build metadata with `build_metadata()`.
+  * Create a `GameCorpus` instance.
+  * Convert reviews into `CorpusDocument` objects using `process_single_review()`.
+  * Optionally parallelize processing with `ProcessPoolExecutor`.
+
+### **Phase 4 — Assembly & Return**
+
+* Aggregate all `GameCorpus` objects into a top-level `Corpus`.
+* Compute total processed documents.
+* Return the tuple `(Corpus, stats)`.
+
+**Final Output Structure:**
+
+```
+Corpus
+ ├─ GameCorpus (game_id)
+ │   ├─ CorpusDocument (review)
+ │   └─ ...
+ └─ GameCorpus
+ ...
+```
+
+## 5. Full Pipeline Overview
 
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#e3f2fd','primaryTextColor':'#000','primaryBorderColor':'#1976d2','lineColor':'#666','secondaryColor':'#fff3e0','tertiaryColor':'#e8f5e9'}}}%%
@@ -158,111 +281,7 @@ flowchart TD
     style LEGEND fill:#fafafa,stroke:#666,stroke-width:1px,rx:5,ry:5
 ```
 
----
-
-## 2. Pipeline Summary
-
-1. **Downloaders:** Extract raw reviews and metadata using the **crawler** or **API**.
-2. **Utilities:** Merge reviews, load metadata, standardize text, and build corpus objects.
-3. **Balancing:** Apply oversampling, undersampling, or hybrid strategies to handle rating imbalance.
-4. **Preprocessing:** Clean, normalize, and label review text via `process_single_review()`.
-5. **Corpus Assembly:** Construct hierarchical corpus objects ready for downstream analysis.
-
----
-
-## 3. Modules Overview
-
-## 3. Modules Overview
-
-| Module                                         | Purpose                                                      | Documentation                     |
-| ---------------------------------------------- | ------------------------------------------------------------ | --------------------------------- |
-| **[downloaders](./downloaders/README.md)**     | Fetch reviews and metadata from BGG (crawler/API).           | [docs](./downloaders/README.md)   |
-| **[utilities](./utilities/README.md)**         | Load/merge reviews, build metadata, and assemble corpus.     | [docs](./utilities/README.md)     |
-| **[preprocessing](./preprocessing/README.md)** | Clean and normalize review text.                             | [docs](./preprocessing/README.md) |
-| **[balancing](./balancing/README.md)**         | Balance review distribution by ratings.                      | [docs](./balancing/README.md)     |
-| **[models](./models/README.md)**               | Define `Corpus`, `GameCorpus`, and `CorpusDocument` classes. | [docs](./models/README.md)        |
-| **[features](./features/README.md)**           | Handle linguistic and vector representations.                | [docs](./features/README.md)      |
-| **[storage](./storage/README.md)**             | Save and load corpora from MongoDB or disk.                  | [docs](./storage/README.md)       |
-
----
-
-## 4. CLI Usage (`cli.py`)
-
-```bash
-# Build corpus for games 50, 51, 52 with default settings
-python cli.py --games 50 51 52 --save-json --generate-stats
-
-# Build corpus using hybrid balance, enable augmentation
-python cli.py --games 50 51 52 --balance-strategy hybrid --use-augmentation
-
-# Use API-only reviews and disable parallel processing
-python cli.py --games 50 51 52 --source api --no-parallel
-```
-
-**Key Options:**
-
-| Option                         | Description                                           |
-| ------------------------------ | ----------------------------------------------------- |
-| `--games`                      | List of BGG game IDs                                  |
-| `--source`                     | `"crawler"`, `"api"`, or `"combined"`                 |
-| `--balance-strategy`           | `"oversample"`, `"undersample"`, `"hybrid"`           |
-| `--use-augmentation`           | Enable text augmentation for underrepresented ratings |
-| `--save-json` / `--save-mongo` | Save corpus as JSON or MongoDB                        |
-| `--generate-stats`             | Print corpus and balancing statistics                 |
-
----
-
-## 5. Corpus Building Workflow
-
-The `build_corpus()` function constructs the complete BGG review corpus in **four main phases**:
-
-### **Phase 1 — Review Collection & Balancing**
-
-- Merge API and crawler reviews with `merge_reviews()`.
-- Apply `collect_balanced_reviews_multi_game()` to handle rating imbalances (oversample / undersample / hybrid).
-- Optionally perform text augmentation.
-- Save balancing reports via `save_balance_report()`.
-
-### **Phase 2 — Grouping & Preparation**
-
-- Standardize each review object with `ensure_review_obj()`.
-- Group reviews by `game_id` into a structured dictionary for processing.
-
-### **Phase 3 — Per-Game Processing**
-
-- For each game:
-
-  - Build metadata with `build_metadata()`.
-  - Create a `GameCorpus` instance.
-  - Convert reviews into `CorpusDocument` objects using `process_single_review()`.
-  - Optionally parallelize processing with `ProcessPoolExecutor`.
-
-### **Phase 4 — Assembly & Return**
-
-- Aggregate all `GameCorpus` objects into a top-level `Corpus`.
-- Compute total processed documents.
-- Return the tuple `(Corpus, stats)`.
-
-**Final Output Structure:**
-
-```
-Corpus
- ├─ GameCorpus (game_id)
- │   ├─ CorpusDocument (review)
- │   └─ ...
- └─ GameCorpus
- ...
-```
-
----
-
-## 6. Configuration (`config.py`)
-
-Main configuration paths and constants
-
----
-
-## 7. Example Python Usage
+## 6. Example Python Usage
 
 ```python
 from bgg_corpus.utilities import build_corpus
@@ -279,9 +298,7 @@ corpus, stats = build_corpus(
 print(f"Total reviews processed: {sum(len(g.documents) for g in corpus.games)}")
 ```
 
----
-
-## 8. Notes
+## 7. Notes
 
 - **Crawler** → Preferred for fine-grained review filtering (rated/commented/neutral).
 - **API** → Best for fast large-scale metadata & review extraction.
@@ -289,4 +306,5 @@ print(f"Total reviews processed: {sum(len(g.documents) for g in corpus.games)}")
 - **Preprocessing** → Ensures consistent, clean review text for analysis.
 - **Balancing** → Addresses skewed rating distributions (e.g., few 1s or 10s, many 6s–7s).
 - **Parallelism** → Accelerates review processing for large datasets.
+
 
