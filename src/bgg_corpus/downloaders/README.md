@@ -1,3 +1,5 @@
+[⬅ Back to bgg_corpus README](../README.md)
+
 # Downloaders Submodule
 
 The `downloaders` submodule provides tools for **downloading board game data** from BoardGameGeek (BGG) using either a **web crawler** or the **official API**.
@@ -8,7 +10,7 @@ downloaders/
 ├── bgg_api.py       # Downloader using BGG XML API
 ├── bgg_crawler.py   # Web crawler using Selenium
 
-````
+```
 
 ## Overview of Methods
 
@@ -38,11 +40,11 @@ downloaders/
 
   The crawler provides a `--save` argument to control what data is written to disk:
 
-  | Option   | Description                                                                                   |
-  | -------- | --------------------------------------------------------------------------------------------- |
-  | `reviews` | Only saves the raw review data (`.json`) for the specified games.                             |
-  | `stats`   | Only saves aggregated statistics for each game (e.g., `total_all`, `total_commented`, etc.)  |
-  | `both`    | Saves **both** raw reviews and statistics (default behavior).                                 |
+  | Option    | Description                                                                                 |
+  | --------- | ------------------------------------------------------------------------------------------- |
+  | `reviews` | Only saves the raw review data (`.json`) for the specified games.                           |
+  | `stats`   | Only saves aggregated statistics for each game (e.g., `total_all`, `total_commented`, etc.) |
+  | `both`    | Saves **both** raw reviews and statistics (default behavior).                               |
 
   **Example Usage:**
 
@@ -59,18 +61,18 @@ downloaders/
 
 **Notes:**
 
-* If you use `--mode balanced`, the crawler will save reviews according to the per-rating balance settings when `--save reviews` or `--save both` is selected.
+- If you use `--mode balanced`, the crawler will save reviews according to the per-rating balance settings when `--save reviews` or `--save both` is selected.
 
-* Stats saved when `--save stats` or `--save both` include:
+- Stats saved when `--save stats` or `--save both` include:
 
   ```
   total_all, total_commented, total_rated, total_rated_and_commented,
   avgweight, numweights, poll_avg, poll_votes
   ```
 
-* These outputs are **essential for Phase 1** of the corpus-building workflow.
+- These outputs are **essential for Phase 1** of the corpus-building workflow.
 
-* **Example Usage:**
+- **Example Usage:**
 
   ```bash
   python bgg_crawler.py --ids 50 51 52 --mode all --headless
@@ -78,21 +80,21 @@ downloaders/
 
 ### 2. BGG API (`bgg_api.py`)
 
-* **Mechanism:** Uses the **official BGG XML API** to fetch game metadata and reviews.
+- **Mechanism:** Uses the **official BGG XML API** to fetch game metadata and reviews.
 
-* **Capabilities:**
+- **Capabilities:**
 
-  * Efficient extraction of **metadata** (game properties, designers, categories, mechanics).
-  * Fast retrieval for **massive review datasets**.
-  * Handles retries for `202 Processing` responses.
+  - Efficient extraction of **metadata** (game properties, designers, categories, mechanics).
+  - Fast retrieval for **massive review datasets**.
+  - Handles retries for `202 Processing` responses.
 
-* **Limitations:**
+- **Limitations:**
 
-  * Less flexible filtering; cannot easily exclude reviews by `rated`/`commented`.
-  * Timestamps and advanced review flags may be limited or require extra parsing.
-  * Not ideal for **balanced downloads per rating** — subsampling would be required afterward.
+  - Less flexible filtering; cannot easily exclude reviews by `rated`/`commented`.
+  - Timestamps and advanced review flags may be limited or require extra parsing.
+  - Not ideal for **balanced downloads per rating** — subsampling would be required afterward.
 
-* **Example Usage:**
+- **Example Usage:**
 
   ```bash
   python bgg_api.py --ids 50 51 52 --mode all
@@ -102,32 +104,32 @@ downloaders/
 
 ## Key Differences
 
-| Feature                   | Crawler                                           | API                          |
-| ------------------------- | ------------------------------------------------- | ---------------------------- |
-| Filtering options         | ✅ Flexible (`rated`, `commented`, rating, custom) | ❌ Limited                    |
+| Feature                   | Crawler                                            | API                          |
+| ------------------------- | -------------------------------------------------- | ---------------------------- |
+| Filtering options         | ✅ Flexible (`rated`, `commented`, rating, custom) | ❌ Limited                   |
 | Timestamps extraction     | ✅ Can parse exact timestamps                      | ⚠ Partial or slower to parse |
-| Metadata extraction       | ⚠ Slower, needs page parsing                      | ✅ Fast and structured        |
-| Speed                     | ⚠ Slower                                          | ✅ Fast for large datasets    |
-| Scale / Massive downloads | ⚠ Not optimal                                     | ✅ Better suited for bulk     |
-| Balancing reviews         | ✅ Supports per-rating balanced downloads          | ❌ Needs post-processing      |
-| Setup                     | Selenium + Chrome driver needed                   | Standard `requests` library  |
+| Metadata extraction       | ⚠ Slower, needs page parsing                       | ✅ Fast and structured       |
+| Speed                     | ⚠ Slower                                           | ✅ Fast for large datasets   |
+| Scale / Massive downloads | ⚠ Not optimal                                      | ✅ Better suited for bulk    |
+| Balancing reviews         | ✅ Supports per-rating balanced downloads          | ❌ Needs post-processing     |
+| Setup                     | Selenium + Chrome driver needed                    | Standard `requests` library  |
 
 ---
 
 ## Summary
 
-* **Use the Crawler** when you need:
+- **Use the Crawler** when you need:
 
-  * Fine-grained filtering of reviews.
-  * Exact timestamps of user comments.
-  * Balanced downloads per rating to handle natural review imbalances.
-  * Controlled page-by-page scraping.
+  - Fine-grained filtering of reviews.
+  - Exact timestamps of user comments.
+  - Balanced downloads per rating to handle natural review imbalances.
+  - Controlled page-by-page scraping.
 
-* **Use the API** when you need:
+- **Use the API** when you need:
 
-  * Rapid metadata extraction.
-  * Large-scale review downloads.
-  * Structured, reliable XML data with retries.
+  - Rapid metadata extraction.
+  - Large-scale review downloads.
+  - Structured, reliable XML data with retries.
 
 Both methods complement each other and can be combined depending on the **dataset size, filtering needs, and balancing requirements**.
 
@@ -196,6 +198,3 @@ To construct a **rich and fully balanced BGG corpus**, we recommend running both
      - **Ready for preprocessing, feature extraction, and downstream tasks**.
 
 > ⚠️ **Best Practice:** Always run the crawler first to obtain balanced reviews and stats, then run the API for metadata. Do not skip either step if your goal is a fully informative corpus.
-
-[⬅ Back to main README](../README.md)
-
