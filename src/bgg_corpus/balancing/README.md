@@ -1,3 +1,5 @@
+[⬅ Back to bgg_corpus README](../README.md)
+
 # Balancing Submodule
 
 The `balancing` submodule provides **corpus balancing and data augmentation tools** for board game reviews. It integrates **synthetic text generation** using NLP augmentation techniques to address class imbalance.
@@ -115,5 +117,3 @@ aug_review = create_augmented_review(original_review, "The game was thrilling!")
 - `save_balance.py`: Store JSON reports with balancing statistics.
 
 This submodule enables **robust class balancing for sentiment-labeled reviews**, supporting multilingual augmentation and integration into ML pipelines.
-
-[⬅ Back to main README](../README.md)
